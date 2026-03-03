@@ -5,7 +5,7 @@ import {
   ResponsiveContainer, Tooltip,
 } from 'recharts';
 import { useDashboardStore, PinnedScenario } from '../store/dashboardStore';
-import { PAIN_COLOURS, SPECIES_COLOURS } from '../data/sads-scenarios';
+import { PAIN_COLOURS, SPECIES_COLOURS, getDisplayAnimal } from '../data/sads-scenarios';
 import { formatSads, formatAnimals } from './Tooltip';
 
 const RADAR_COLOURS = ['#7c9e8f', '#7a8fb5', '#c4956a'];
@@ -109,9 +109,9 @@ function ScenarioCard({ scenario: s, colour, onUnpin }: {
       </button>
       <div
         className="w-2 h-2 rounded-full inline-block mr-1.5 mb-0.5"
-        style={{ backgroundColor: SPECIES_COLOURS[s.animal] ?? colour }}
+        style={{ backgroundColor: SPECIES_COLOURS[getDisplayAnimal(s.animal)] ?? SPECIES_COLOURS[s.animal] ?? colour }}
       />
-      <span className="text-[#8b949e] text-xs">{s.animal}</span>
+      <span className="text-[#8b949e] text-xs">{getDisplayAnimal(s.animal)}</span>
       <div className="font-semibold text-[#e6edf3] text-sm mt-0.5 pr-4">{s.scenario}</div>
       <div className="flex items-center gap-1.5 mt-1">
         <span

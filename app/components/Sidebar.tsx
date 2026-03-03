@@ -210,22 +210,49 @@ export function Sidebar() {
       {/* 3. COUNTRIES */}
       <SidebarSection title="Countries">
         <div className="space-y-2">
-          {selectedCountries.size > 0 && (
+          {selectedCountries.size > 0 && (() => {
+            // Build smart pills: collapse wholly-selected continents into one pill
+            const pills: { key: string; label: string; codes: string[] }[] = [];
+            const handled = new Set<string>();
+            for (const cont of CONTINENT_ORDER) {
+              const contCodes = (continentCountries[cont] ?? []).map(c => c.code);
+              if (contCodes.length === 0) continue;
+              const selInCont = contCodes.filter(c => selectedCountries.has(c));
+              if (selInCont.length === 0) continue;
+              if (selInCont.length === contCodes.length && contCodes.length >= 2) {
+                pills.push({ key: `cont-${cont}`, label: `${cont} (${contCodes.length})`, codes: selInCont });
+                selInCont.forEach(c => handled.add(c));
+              }
+            }
+            for (const code of selectedCountries) {
+              if (!handled.has(code)) {
+                const label = countries.find(c => c.code === code)?.entity ?? code;
+                pills.push({ key: code, label, codes: [code] });
+              }
+            }
+            const MAX = 7;
+            const visible = pills.slice(0, MAX);
+            const overflow = pills.length - MAX;
+            return (
               <div className="flex flex-wrap gap-1 mb-1">
-                {Array.from(selectedCountries).map(code => {
-                  const label = countries.find(c => c.code === code)?.entity ?? code;
-                  return (
-                    <span key={code} className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-[#21262d] text-xs text-[#8b949e]">
-                      {label}
-                      <button onClick={() => toggleCountry(code)} className="hover:text-[#e6edf3] ml-0.5">✕</button>
-                    </span>
-                  );
-                })}
+                {visible.map(pill => (
+                  <span key={pill.key} className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-[#21262d] text-xs text-[#8b949e]">
+                    {pill.label}
+                    <button
+                      onClick={() => { const n = new Set(selectedCountries); pill.codes.forEach(c => n.delete(c)); setSelectedCountries(n); }}
+                      className="hover:text-[#e6edf3] ml-0.5"
+                    >✕</button>
+                  </span>
+                ))}
+                {overflow > 0 && (
+                  <span className="px-1.5 py-0.5 text-xs text-[#6e7681]">+{overflow} more</span>
+                )}
                 <button onClick={() => setSelectedCountries(new Set())} className="text-xs text-[#6e7681] hover:text-[#e6edf3] self-center">
                   Clear all
                 </button>
               </div>
-            )}
+            );
+          })()}
 
             <input
               type="text"

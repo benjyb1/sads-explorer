@@ -20,7 +20,7 @@ export function WorldMap() {
   const [countries110, setCountries110] = useState<{ features: GeoFeature[] } | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; entry: CountrySadsEntry | null }>({ x: 0, y: 0, entry: null });
   const { countryData, loading } = useCountryData();
-  const { selectedYear, setSelectedYear, normalisation, setSelectedCountry, selectedCountry } = useDashboardStore();
+  const { selectedYear, setSelectedYear, normalisation, setSelectedCountry, selectedCountry, selectedCountries } = useDashboardStore();
 
   // Load local GeoJSON (served from /public/world.geojson)
   useEffect(() => {
@@ -116,13 +116,22 @@ export function WorldMap() {
         const val = getDisplayValue(entry);
         return val > 0 ? colourScale(val) : '#21262d';
       })
+      .attr('fill-opacity', d => {
+        if (selectedCountries.size === 0) return 1;
+        const code = d.properties['ISO3166-1-Alpha-3'];
+        return selectedCountries.has(code) ? 1 : 0.25;
+      })
       .attr('stroke', d => {
         const code = d.properties['ISO3166-1-Alpha-3'];
-        return selectedCountry === code ? '#e6edf3' : '#0d1117';
+        if (selectedCountry === code) return '#e6edf3';
+        if (selectedCountries.has(code)) return '#7c9e8f';
+        return '#0d1117';
       })
       .attr('stroke-width', d => {
         const code = d.properties['ISO3166-1-Alpha-3'];
-        return selectedCountry === code ? 1.5 : 0.4;
+        if (selectedCountry === code) return 1.5;
+        if (selectedCountries.has(code)) return 1.2;
+        return 0.4;
       })
       .style('cursor', d => {
         const code = d.properties['ISO3166-1-Alpha-3'];
@@ -140,7 +149,7 @@ export function WorldMap() {
         setSelectedCountry(selectedCountry === code ? null : code);
       });
 
-  }, [countries110, dims, yearMap, maxValue, getDisplayValue, selectedCountry, setSelectedCountry]);
+  }, [countries110, dims, yearMap, maxValue, getDisplayValue, selectedCountry, setSelectedCountry, selectedCountries]);
 
   // Available years with data
   const availableYears = React.useMemo(() => {

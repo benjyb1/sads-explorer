@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { useFilteredScenarios } from '../hooks/useFilteredData';
-import { PAIN_COLOURS, SadScenario } from '../data/sads-scenarios';
+import { PAIN_COLOURS, SadScenario, getDisplayAnimal } from '../data/sads-scenarios';
 import { useDashboardStore } from '../store/dashboardStore';
 import { formatSads, formatAnimals } from './Tooltip';
 
@@ -160,7 +160,7 @@ export function DataTable() {
                 style={{ backgroundColor: i % 2 === 0 ? 'transparent' : '#0a0e14' }}
               >
                 {visibleCols.has('animal') && (
-                  <td className="px-3 py-2 text-[#8b949e]">{s.animal}</td>
+                  <td className="px-3 py-2 text-[#8b949e]">{getDisplayAnimal(s.animal)}</td>
                 )}
                 {visibleCols.has('scenario') && (
                   <td className="px-3 py-2 text-[#e6edf3] font-medium">
