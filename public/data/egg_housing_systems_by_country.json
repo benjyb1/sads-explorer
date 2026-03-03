@@ -1,0 +1,802 @@
+[
+  {
+    "entity": "Algeria",
+    "code": "DZA",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Argentina",
+    "code": "ARG",
+    "year": 2018,
+    "caged": 89,
+    "barnOrAviary": 8,
+    "nonOrganicFreeRange": 3,
+    "organicFreeRange": 3,
+    "unknown": 0
+  },
+  {
+    "entity": "Armenia",
+    "code": "ARM",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Australia",
+    "code": "AUS",
+    "year": 2018,
+    "caged": 54.5,
+    "barnOrAviary": 9.1,
+    "nonOrganicFreeRange": 36.4,
+    "organicFreeRange": 36.4,
+    "unknown": 0
+  },
+  {
+    "entity": "Austria",
+    "code": "AUT",
+    "year": 2018,
+    "caged": 0.8,
+    "barnOrAviary": 64.4,
+    "nonOrganicFreeRange": 23.5,
+    "organicFreeRange": 23.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Azerbaijan",
+    "code": "AZE",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Bangladesh",
+    "code": "BGD",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Belarus",
+    "code": "BLR",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Belgium",
+    "code": "BEL",
+    "year": 2018,
+    "caged": 39.5,
+    "barnOrAviary": 42.2,
+    "nonOrganicFreeRange": 13.1,
+    "organicFreeRange": 13.1,
+    "unknown": 0
+  },
+  {
+    "entity": "Brazil",
+    "code": "BRA",
+    "year": 2018,
+    "caged": 95,
+    "barnOrAviary": 2.5,
+    "nonOrganicFreeRange": 2.5,
+    "organicFreeRange": 2.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Brunei",
+    "code": "BRN",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Bulgaria",
+    "code": "BGR",
+    "year": 2018,
+    "caged": 55.4,
+    "barnOrAviary": 41.1,
+    "nonOrganicFreeRange": 3.5,
+    "organicFreeRange": 3.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Canada",
+    "code": "CAN",
+    "year": 2018,
+    "caged": 87,
+    "barnOrAviary": 9,
+    "nonOrganicFreeRange": 1,
+    "organicFreeRange": 1,
+    "unknown": 0
+  },
+  {
+    "entity": "Chile",
+    "code": "CHL",
+    "year": 2016,
+    "caged": 98,
+    "barnOrAviary": 2,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "China",
+    "code": "CHN",
+    "year": 2018,
+    "caged": 97,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 3,
+    "organicFreeRange": 3,
+    "unknown": 0
+  },
+  {
+    "entity": "Colombia",
+    "code": "COL",
+    "year": 2018,
+    "caged": 70,
+    "barnOrAviary": 30,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Croatia",
+    "code": "HRV",
+    "year": 2018,
+    "caged": 72.9,
+    "barnOrAviary": 24.6,
+    "nonOrganicFreeRange": 2.4,
+    "organicFreeRange": 2.4,
+    "unknown": 0
+  },
+  {
+    "entity": "Cuba",
+    "code": "CUB",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Cyprus",
+    "code": "CYP",
+    "year": 2018,
+    "caged": 71.3,
+    "barnOrAviary": 15.1,
+    "nonOrganicFreeRange": 11.4,
+    "organicFreeRange": 11.4,
+    "unknown": 0
+  },
+  {
+    "entity": "Czechia",
+    "code": "CZE",
+    "year": 2018,
+    "caged": 83.3,
+    "barnOrAviary": 15.7,
+    "nonOrganicFreeRange": 0.6,
+    "organicFreeRange": 0.6,
+    "unknown": 0
+  },
+  {
+    "entity": "Denmark",
+    "code": "DNK",
+    "year": 2018,
+    "caged": 16,
+    "barnOrAviary": 46,
+    "nonOrganicFreeRange": 8,
+    "organicFreeRange": 8,
+    "unknown": 0
+  },
+  {
+    "entity": "Ecuador",
+    "code": "ECU",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Egypt",
+    "code": "EGY",
+    "year": 2013,
+    "caged": 50,
+    "barnOrAviary": 50,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Estonia",
+    "code": "EST",
+    "year": 2018,
+    "caged": 81.7,
+    "barnOrAviary": 8.1,
+    "nonOrganicFreeRange": 4.9,
+    "organicFreeRange": 4.9,
+    "unknown": 0
+  },
+  {
+    "entity": "Finland",
+    "code": "FIN",
+    "year": 2018,
+    "caged": 58,
+    "barnOrAviary": 33,
+    "nonOrganicFreeRange": 2,
+    "organicFreeRange": 2,
+    "unknown": 0
+  },
+  {
+    "entity": "France",
+    "code": "FRA",
+    "year": 2018,
+    "caged": 61,
+    "barnOrAviary": 8,
+    "nonOrganicFreeRange": 21,
+    "organicFreeRange": 21,
+    "unknown": 0
+  },
+  {
+    "entity": "Georgia",
+    "code": "GEO",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Germany",
+    "code": "DEU",
+    "year": 2018,
+    "caged": 6.7,
+    "barnOrAviary": 62.7,
+    "nonOrganicFreeRange": 19.1,
+    "organicFreeRange": 19.1,
+    "unknown": 0
+  },
+  {
+    "entity": "Ghana",
+    "code": "GHA",
+    "year": 2013,
+    "caged": 50,
+    "barnOrAviary": 50,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Hungary",
+    "code": "HUN",
+    "year": 2018,
+    "caged": 80.8,
+    "barnOrAviary": 17.4,
+    "nonOrganicFreeRange": 1.4,
+    "organicFreeRange": 1.4,
+    "unknown": 0
+  },
+  {
+    "entity": "India",
+    "code": "IND",
+    "year": 2017,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Indonesia",
+    "code": "IDN",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Iran",
+    "code": "IRN",
+    "year": 2018,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Ireland",
+    "code": "IRL",
+    "year": 2018,
+    "caged": 53,
+    "barnOrAviary": 1,
+    "nonOrganicFreeRange": 43,
+    "organicFreeRange": 43,
+    "unknown": 0
+  },
+  {
+    "entity": "Italy",
+    "code": "ITA",
+    "year": 2018,
+    "caged": 54.5,
+    "barnOrAviary": 35.3,
+    "nonOrganicFreeRange": 4.6,
+    "organicFreeRange": 4.6,
+    "unknown": 0
+  },
+  {
+    "entity": "Japan",
+    "code": "JPN",
+    "year": 2018,
+    "caged": 94.6,
+    "barnOrAviary": 4.5,
+    "nonOrganicFreeRange": 0.9,
+    "organicFreeRange": 0.9,
+    "unknown": 0
+  },
+  {
+    "entity": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2018,
+    "caged": 85,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 15,
+    "organicFreeRange": 15,
+    "unknown": 0
+  },
+  {
+    "entity": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Latvia",
+    "code": "LVA",
+    "year": 2018,
+    "caged": 85.6,
+    "barnOrAviary": 11.7,
+    "nonOrganicFreeRange": 2.7,
+    "organicFreeRange": 2.7,
+    "unknown": 0
+  },
+  {
+    "entity": "Libya",
+    "code": "LBY",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Lithuania",
+    "code": "LTU",
+    "year": 2018,
+    "caged": 89.5,
+    "barnOrAviary": 9.9,
+    "nonOrganicFreeRange": 0.1,
+    "organicFreeRange": 0.1,
+    "unknown": 0
+  },
+  {
+    "entity": "Luxembourg",
+    "code": "LUX",
+    "year": 2018,
+    "caged": 0,
+    "barnOrAviary": 79,
+    "nonOrganicFreeRange": 10.5,
+    "organicFreeRange": 10.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Malaysia",
+    "code": "MYS",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Malta",
+    "code": "MLT",
+    "year": 2018,
+    "caged": 96.9,
+    "barnOrAviary": 3.1,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Mexico",
+    "code": "MEX",
+    "year": 2020,
+    "caged": 99.5,
+    "barnOrAviary": 0.5,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Morocco",
+    "code": "MAR",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Netherlands",
+    "code": "NLD",
+    "year": 2018,
+    "caged": 11,
+    "barnOrAviary": 61,
+    "nonOrganicFreeRange": 20,
+    "organicFreeRange": 20,
+    "unknown": 0
+  },
+  {
+    "entity": "New Zealand",
+    "code": "NZL",
+    "year": 2018,
+    "caged": 66.4,
+    "barnOrAviary": 3,
+    "nonOrganicFreeRange": 29.6,
+    "organicFreeRange": 29.6,
+    "unknown": 0
+  },
+  {
+    "entity": "Nigeria",
+    "code": "NGA",
+    "year": 2017,
+    "caged": 70,
+    "barnOrAviary": 30,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Norway",
+    "code": "NOR",
+    "year": 2020,
+    "caged": 9,
+    "barnOrAviary": 82,
+    "nonOrganicFreeRange": 1.5,
+    "organicFreeRange": 1.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Pakistan",
+    "code": "PAK",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Peru",
+    "code": "PER",
+    "year": 2018,
+    "caged": 93,
+    "barnOrAviary": 5,
+    "nonOrganicFreeRange": 1,
+    "organicFreeRange": 1,
+    "unknown": 0
+  },
+  {
+    "entity": "Philippines",
+    "code": "PHL",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Poland",
+    "code": "POL",
+    "year": 2018,
+    "caged": 88.3,
+    "barnOrAviary": 9.1,
+    "nonOrganicFreeRange": 2.4,
+    "organicFreeRange": 2.4,
+    "unknown": 0
+  },
+  {
+    "entity": "Portugal",
+    "code": "PRT",
+    "year": 2018,
+    "caged": 90.5,
+    "barnOrAviary": 6.5,
+    "nonOrganicFreeRange": 2.5,
+    "organicFreeRange": 2.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Romania",
+    "code": "ROU",
+    "year": 2018,
+    "caged": 62,
+    "barnOrAviary": 33.8,
+    "nonOrganicFreeRange": 3.3,
+    "organicFreeRange": 3.3,
+    "unknown": 0
+  },
+  {
+    "entity": "Russia",
+    "code": "RUS",
+    "year": 2018,
+    "caged": 99.9,
+    "barnOrAviary": 0.1,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Singapore",
+    "code": "SGP",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Slovakia",
+    "code": "SVK",
+    "year": 2018,
+    "caged": 83,
+    "barnOrAviary": 16,
+    "nonOrganicFreeRange": 0.5,
+    "organicFreeRange": 0.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Slovenia",
+    "code": "SVN",
+    "year": 2018,
+    "caged": 42.2,
+    "barnOrAviary": 39.1,
+    "nonOrganicFreeRange": 16.3,
+    "organicFreeRange": 16.3,
+    "unknown": 0
+  },
+  {
+    "entity": "South Africa",
+    "code": "ZAF",
+    "year": 2018,
+    "caged": 86,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 14,
+    "organicFreeRange": 14,
+    "unknown": 0
+  },
+  {
+    "entity": "South Korea",
+    "code": "KOR",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Spain",
+    "code": "ESP",
+    "year": 2019,
+    "caged": 77,
+    "barnOrAviary": 13,
+    "nonOrganicFreeRange": 9,
+    "organicFreeRange": 9,
+    "unknown": 0
+  },
+  {
+    "entity": "Sweden",
+    "code": "SWE",
+    "year": 2018,
+    "caged": 8,
+    "barnOrAviary": 72,
+    "nonOrganicFreeRange": 4,
+    "organicFreeRange": 4,
+    "unknown": 0
+  },
+  {
+    "entity": "Switzerland",
+    "code": "CHE",
+    "year": 2018,
+    "caged": 0,
+    "barnOrAviary": 22.2,
+    "nonOrganicFreeRange": 60.5,
+    "organicFreeRange": 60.5,
+    "unknown": 0
+  },
+  {
+    "entity": "Taiwan",
+    "code": "TWN",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Tajikistan",
+    "code": "TJK",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Thailand",
+    "code": "THA",
+    "year": 2017,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  },
+  {
+    "entity": "Turkey",
+    "code": "TUR",
+    "year": 2018,
+    "caged": 88,
+    "barnOrAviary": 3,
+    "nonOrganicFreeRange": 8,
+    "organicFreeRange": 8,
+    "unknown": 0
+  },
+  {
+    "entity": "Turkmenistan",
+    "code": "TKM",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Ukraine",
+    "code": "UKR",
+    "year": 2017,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "United Kingdom",
+    "code": "GBR",
+    "year": 2018,
+    "caged": 44.2,
+    "barnOrAviary": 1.4,
+    "nonOrganicFreeRange": 51.9,
+    "organicFreeRange": 51.9,
+    "unknown": 0
+  },
+  {
+    "entity": "United States",
+    "code": "USA",
+    "year": 2020,
+    "caged": 76.4,
+    "barnOrAviary": 17.8,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Uruguay",
+    "code": "URY",
+    "year": 2016,
+    "caged": 88,
+    "barnOrAviary": 12,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Uzbekistan",
+    "code": "UZB",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Venezuela",
+    "code": "VEN",
+    "year": 2013,
+    "caged": 100,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 0
+  },
+  {
+    "entity": "Vietnam",
+    "code": "VNM",
+    "year": 2016,
+    "caged": 0,
+    "barnOrAviary": 0,
+    "nonOrganicFreeRange": 0,
+    "organicFreeRange": 0,
+    "unknown": 100
+  }
+]

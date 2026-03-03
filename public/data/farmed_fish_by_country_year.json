@@ -1,0 +1,4634 @@
+[
+  {
+    "entity": "Afghanistan",
+    "code": "AFG",
+    "year": 2020,
+    "estimate": 10000000,
+    "upper": 14000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Afghanistan",
+    "code": "AFG",
+    "year": 2021,
+    "estimate": 12000000,
+    "upper": 16000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Afghanistan",
+    "code": "AFG",
+    "year": 2022,
+    "estimate": 12000000,
+    "upper": 16000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Albania",
+    "code": "ALB",
+    "year": 2020,
+    "estimate": 21000000,
+    "upper": 26000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Albania",
+    "code": "ALB",
+    "year": 2021,
+    "estimate": 19000000,
+    "upper": 22000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Albania",
+    "code": "ALB",
+    "year": 2022,
+    "estimate": 20000000,
+    "upper": 23000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "Algeria",
+    "code": "DZA",
+    "year": 2020,
+    "estimate": 14000000,
+    "upper": 17000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Algeria",
+    "code": "DZA",
+    "year": 2021,
+    "estimate": 11000000,
+    "upper": 13000000,
+    "lower": 9000000
+  },
+  {
+    "entity": "Algeria",
+    "code": "DZA",
+    "year": 2022,
+    "estimate": 12000000,
+    "upper": 15000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "American Samoa",
+    "code": "ASM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "American Samoa",
+    "code": "ASM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "American Samoa",
+    "code": "ASM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Angola",
+    "code": "AGO",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Angola",
+    "code": "AGO",
+    "year": 2021,
+    "estimate": 8000000,
+    "upper": 8000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Angola",
+    "code": "AGO",
+    "year": 2022,
+    "estimate": 6000000,
+    "upper": 6000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Antigua and Barbuda",
+    "code": "ATG",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Antigua and Barbuda",
+    "code": "ATG",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Antigua and Barbuda",
+    "code": "ATG",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Argentina",
+    "code": "ARG",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Argentina",
+    "code": "ARG",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 9000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Argentina",
+    "code": "ARG",
+    "year": 2022,
+    "estimate": 10000000,
+    "upper": 18000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Armenia",
+    "code": "ARM",
+    "year": 2020,
+    "estimate": 25000000,
+    "upper": 46000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Armenia",
+    "code": "ARM",
+    "year": 2021,
+    "estimate": 25000000,
+    "upper": 46000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Armenia",
+    "code": "ARM",
+    "year": 2022,
+    "estimate": 34000000,
+    "upper": 62000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Aruba",
+    "code": "ABW",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Aruba",
+    "code": "ABW",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Aruba",
+    "code": "ABW",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Australia",
+    "code": "AUS",
+    "year": 2020,
+    "estimate": 27000000,
+    "upper": 38000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "Australia",
+    "code": "AUS",
+    "year": 2021,
+    "estimate": 44000000,
+    "upper": 65000000,
+    "lower": 23000000
+  },
+  {
+    "entity": "Australia",
+    "code": "AUS",
+    "year": 2022,
+    "estimate": 39000000,
+    "upper": 55000000,
+    "lower": 23000000
+  },
+  {
+    "entity": "Austria",
+    "code": "AUT",
+    "year": 2020,
+    "estimate": 5000000,
+    "upper": 7000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Austria",
+    "code": "AUT",
+    "year": 2021,
+    "estimate": 6000000,
+    "upper": 8000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Austria",
+    "code": "AUT",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 7000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Azerbaijan",
+    "code": "AZE",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Azerbaijan",
+    "code": "AZE",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Azerbaijan",
+    "code": "AZE",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahamas",
+    "code": "BHS",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahamas",
+    "code": "BHS",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahamas",
+    "code": "BHS",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahrain",
+    "code": "BHR",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahrain",
+    "code": "BHR",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bahrain",
+    "code": "BHR",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bangladesh",
+    "code": "BGD",
+    "year": 2020,
+    "estimate": 4600000000,
+    "upper": 5900000000,
+    "lower": 3300000000
+  },
+  {
+    "entity": "Bangladesh",
+    "code": "BGD",
+    "year": 2021,
+    "estimate": 4800000000,
+    "upper": 6100000000,
+    "lower": 3500000000
+  },
+  {
+    "entity": "Bangladesh",
+    "code": "BGD",
+    "year": 2022,
+    "estimate": 5000000000,
+    "upper": 6300000000,
+    "lower": 3700000000
+  },
+  {
+    "entity": "Barbados",
+    "code": "BRB",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Barbados",
+    "code": "BRB",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Barbados",
+    "code": "BRB",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belarus",
+    "code": "BLR",
+    "year": 2020,
+    "estimate": 8000000,
+    "upper": 12000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Belarus",
+    "code": "BLR",
+    "year": 2021,
+    "estimate": 8000000,
+    "upper": 12000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Belarus",
+    "code": "BLR",
+    "year": 2022,
+    "estimate": 7000000,
+    "upper": 10000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Belgium",
+    "code": "BEL",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belgium",
+    "code": "BEL",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belgium",
+    "code": "BEL",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belize",
+    "code": "BLZ",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belize",
+    "code": "BLZ",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Belize",
+    "code": "BLZ",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Benin",
+    "code": "BEN",
+    "year": 2020,
+    "estimate": 6000000,
+    "upper": 8000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Benin",
+    "code": "BEN",
+    "year": 2021,
+    "estimate": 10000000,
+    "upper": 11000000,
+    "lower": 9000000
+  },
+  {
+    "entity": "Benin",
+    "code": "BEN",
+    "year": 2022,
+    "estimate": 11000000,
+    "upper": 12000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Bhutan",
+    "code": "BTN",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bhutan",
+    "code": "BTN",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bhutan",
+    "code": "BTN",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bolivia",
+    "code": "BOL",
+    "year": 2020,
+    "estimate": 22000000,
+    "upper": 30000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Bolivia",
+    "code": "BOL",
+    "year": 2021,
+    "estimate": 26000000,
+    "upper": 36000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "Bolivia",
+    "code": "BOL",
+    "year": 2022,
+    "estimate": 30000000,
+    "upper": 41000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Bonaire Sint Eustatius and Saba",
+    "code": "BES",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bonaire Sint Eustatius and Saba",
+    "code": "BES",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bonaire Sint Eustatius and Saba",
+    "code": "BES",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Botswana",
+    "code": "BWA",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Botswana",
+    "code": "BWA",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Botswana",
+    "code": "BWA",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Brazil",
+    "code": "BRA",
+    "year": 2020,
+    "estimate": 940000000,
+    "upper": 1200000000,
+    "lower": 660000000
+  },
+  {
+    "entity": "Brazil",
+    "code": "BRA",
+    "year": 2021,
+    "estimate": 1200000000,
+    "upper": 1300000000,
+    "lower": 1100000000
+  },
+  {
+    "entity": "Brazil",
+    "code": "BRA",
+    "year": 2022,
+    "estimate": 1400000000,
+    "upper": 1500000000,
+    "lower": 1200000000
+  },
+  {
+    "entity": "Brunei",
+    "code": "BRN",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Brunei",
+    "code": "BRN",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Brunei",
+    "code": "BRN",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Bulgaria",
+    "code": "BGR",
+    "year": 2020,
+    "estimate": 11000000,
+    "upper": 15000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Bulgaria",
+    "code": "BGR",
+    "year": 2021,
+    "estimate": 10000000,
+    "upper": 14000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Bulgaria",
+    "code": "BGR",
+    "year": 2022,
+    "estimate": 7000000,
+    "upper": 9000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Burkina Faso",
+    "code": "BFA",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Burkina Faso",
+    "code": "BFA",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Burkina Faso",
+    "code": "BFA",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Burundi",
+    "code": "BDI",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Burundi",
+    "code": "BDI",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Burundi",
+    "code": "BDI",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Cambodia",
+    "code": "KHM",
+    "year": 2020,
+    "estimate": 1200000000,
+    "upper": 1600000000,
+    "lower": 810000000
+  },
+  {
+    "entity": "Cambodia",
+    "code": "KHM",
+    "year": 2021,
+    "estimate": 1100000000,
+    "upper": 1400000000,
+    "lower": 720000000
+  },
+  {
+    "entity": "Cambodia",
+    "code": "KHM",
+    "year": 2022,
+    "estimate": 1000000000,
+    "upper": 1300000000,
+    "lower": 680000000
+  },
+  {
+    "entity": "Cameroon",
+    "code": "CMR",
+    "year": 2020,
+    "estimate": 16000000,
+    "upper": 21000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Cameroon",
+    "code": "CMR",
+    "year": 2021,
+    "estimate": 22000000,
+    "upper": 25000000,
+    "lower": 19000000
+  },
+  {
+    "entity": "Cameroon",
+    "code": "CMR",
+    "year": 2022,
+    "estimate": 23000000,
+    "upper": 26000000,
+    "lower": 20000000
+  },
+  {
+    "entity": "Canada",
+    "code": "CAN",
+    "year": 2020,
+    "estimate": 37000000,
+    "upper": 50000000,
+    "lower": 25000000
+  },
+  {
+    "entity": "Canada",
+    "code": "CAN",
+    "year": 2021,
+    "estimate": 43000000,
+    "upper": 57000000,
+    "lower": 29000000
+  },
+  {
+    "entity": "Canada",
+    "code": "CAN",
+    "year": 2022,
+    "estimate": 33000000,
+    "upper": 43000000,
+    "lower": 22000000
+  },
+  {
+    "entity": "Central African Republic",
+    "code": "CAF",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Central African Republic",
+    "code": "CAF",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Central African Republic",
+    "code": "CAF",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Chad",
+    "code": "TCD",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Chad",
+    "code": "TCD",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Chad",
+    "code": "TCD",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Chile",
+    "code": "CHL",
+    "year": 2020,
+    "estimate": 250000000,
+    "upper": 290000000,
+    "lower": 210000000
+  },
+  {
+    "entity": "Chile",
+    "code": "CHL",
+    "year": 2021,
+    "estimate": 230000000,
+    "upper": 280000000,
+    "lower": 190000000
+  },
+  {
+    "entity": "Chile",
+    "code": "CHL",
+    "year": 2022,
+    "estimate": 250000000,
+    "upper": 300000000,
+    "lower": 210000000
+  },
+  {
+    "entity": "China",
+    "code": "CHN",
+    "year": 2020,
+    "estimate": 74000000000,
+    "upper": 100000000000,
+    "lower": 45000000000
+  },
+  {
+    "entity": "China",
+    "code": "CHN",
+    "year": 2021,
+    "estimate": 75000000000,
+    "upper": 100000000000,
+    "lower": 45000000000
+  },
+  {
+    "entity": "China",
+    "code": "CHN",
+    "year": 2022,
+    "estimate": 77000000000,
+    "upper": 110000000000,
+    "lower": 47000000000
+  },
+  {
+    "entity": "Colombia",
+    "code": "COL",
+    "year": 2020,
+    "estimate": 360000000,
+    "upper": 500000000,
+    "lower": 230000000
+  },
+  {
+    "entity": "Colombia",
+    "code": "COL",
+    "year": 2021,
+    "estimate": 430000000,
+    "upper": 540000000,
+    "lower": 310000000
+  },
+  {
+    "entity": "Colombia",
+    "code": "COL",
+    "year": 2022,
+    "estimate": 450000000,
+    "upper": 580000000,
+    "lower": 330000000
+  },
+  {
+    "entity": "Congo",
+    "code": "COG",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Congo",
+    "code": "COG",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Congo",
+    "code": "COG",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Cook Islands",
+    "code": "COK",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Cook Islands",
+    "code": "COK",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Cook Islands",
+    "code": "COK",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Costa Rica",
+    "code": "CRI",
+    "year": 2020,
+    "estimate": 28000000,
+    "upper": 36000000,
+    "lower": 20000000
+  },
+  {
+    "entity": "Costa Rica",
+    "code": "CRI",
+    "year": 2021,
+    "estimate": 38000000,
+    "upper": 40000000,
+    "lower": 37000000
+  },
+  {
+    "entity": "Costa Rica",
+    "code": "CRI",
+    "year": 2022,
+    "estimate": 41000000,
+    "upper": 42000000,
+    "lower": 40000000
+  },
+  {
+    "entity": "Cote d'Ivoire",
+    "code": "CIV",
+    "year": 2020,
+    "estimate": 10000000,
+    "upper": 13000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Cote d'Ivoire",
+    "code": "CIV",
+    "year": 2021,
+    "estimate": 14000000,
+    "upper": 15000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Cote d'Ivoire",
+    "code": "CIV",
+    "year": 2022,
+    "estimate": 15000000,
+    "upper": 16000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Croatia",
+    "code": "HRV",
+    "year": 2020,
+    "estimate": 45000000,
+    "upper": 52000000,
+    "lower": 38000000
+  },
+  {
+    "entity": "Croatia",
+    "code": "HRV",
+    "year": 2021,
+    "estimate": 52000000,
+    "upper": 60000000,
+    "lower": 44000000
+  },
+  {
+    "entity": "Croatia",
+    "code": "HRV",
+    "year": 2022,
+    "estimate": 55000000,
+    "upper": 64000000,
+    "lower": 46000000
+  },
+  {
+    "entity": "Cuba",
+    "code": "CUB",
+    "year": 2020,
+    "estimate": 25000000,
+    "upper": 32000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Cuba",
+    "code": "CUB",
+    "year": 2021,
+    "estimate": 20000000,
+    "upper": 27000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Cuba",
+    "code": "CUB",
+    "year": 2022,
+    "estimate": 15000000,
+    "upper": 19000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Cyprus",
+    "code": "CYP",
+    "year": 2020,
+    "estimate": 21000000,
+    "upper": 24000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Cyprus",
+    "code": "CYP",
+    "year": 2021,
+    "estimate": 22000000,
+    "upper": 26000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Cyprus",
+    "code": "CYP",
+    "year": 2022,
+    "estimate": 21000000,
+    "upper": 25000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Czechia",
+    "code": "CZE",
+    "year": 2020,
+    "estimate": 16000000,
+    "upper": 23000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Czechia",
+    "code": "CZE",
+    "year": 2021,
+    "estimate": 17000000,
+    "upper": 24000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Czechia",
+    "code": "CZE",
+    "year": 2022,
+    "estimate": 16000000,
+    "upper": 22000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Democratic Republic of Congo",
+    "code": "COD",
+    "year": 2020,
+    "estimate": 9000000,
+    "upper": 12000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Democratic Republic of Congo",
+    "code": "COD",
+    "year": 2021,
+    "estimate": 14000000,
+    "upper": 14000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Democratic Republic of Congo",
+    "code": "COD",
+    "year": 2022,
+    "estimate": 14000000,
+    "upper": 14000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Denmark",
+    "code": "DNK",
+    "year": 2020,
+    "estimate": 29000000,
+    "upper": 39000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Denmark",
+    "code": "DNK",
+    "year": 2021,
+    "estimate": 28000000,
+    "upper": 38000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Denmark",
+    "code": "DNK",
+    "year": 2022,
+    "estimate": 27000000,
+    "upper": 36000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Dominican Republic",
+    "code": "DOM",
+    "year": 2020,
+    "estimate": 6000000,
+    "upper": 7000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Dominican Republic",
+    "code": "DOM",
+    "year": 2021,
+    "estimate": 8000000,
+    "upper": 9000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Dominican Republic",
+    "code": "DOM",
+    "year": 2022,
+    "estimate": 8000000,
+    "upper": 9000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "East Timor",
+    "code": "TLS",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "East Timor",
+    "code": "TLS",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "East Timor",
+    "code": "TLS",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Ecuador",
+    "code": "ECU",
+    "year": 2020,
+    "estimate": 26000000,
+    "upper": 38000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Ecuador",
+    "code": "ECU",
+    "year": 2021,
+    "estimate": 33000000,
+    "upper": 40000000,
+    "lower": 26000000
+  },
+  {
+    "entity": "Ecuador",
+    "code": "ECU",
+    "year": 2022,
+    "estimate": 33000000,
+    "upper": 40000000,
+    "lower": 26000000
+  },
+  {
+    "entity": "Egypt",
+    "code": "EGY",
+    "year": 2020,
+    "estimate": 2700000000,
+    "upper": 3500000000,
+    "lower": 2000000000
+  },
+  {
+    "entity": "Egypt",
+    "code": "EGY",
+    "year": 2021,
+    "estimate": 3400000000,
+    "upper": 3700000000,
+    "lower": 3100000000
+  },
+  {
+    "entity": "Egypt",
+    "code": "EGY",
+    "year": 2022,
+    "estimate": 3400000000,
+    "upper": 3600000000,
+    "lower": 3100000000
+  },
+  {
+    "entity": "El Salvador",
+    "code": "SLV",
+    "year": 2020,
+    "estimate": 15000000,
+    "upper": 18000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "El Salvador",
+    "code": "SLV",
+    "year": 2021,
+    "estimate": 32000000,
+    "upper": 32000000,
+    "lower": 32000000
+  },
+  {
+    "entity": "El Salvador",
+    "code": "SLV",
+    "year": 2022,
+    "estimate": 33000000,
+    "upper": 33000000,
+    "lower": 33000000
+  },
+  {
+    "entity": "Equatorial Guinea",
+    "code": "GNQ",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Equatorial Guinea",
+    "code": "GNQ",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Equatorial Guinea",
+    "code": "GNQ",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eritrea",
+    "code": "ERI",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eritrea",
+    "code": "ERI",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eritrea",
+    "code": "ERI",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Estonia",
+    "code": "EST",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Estonia",
+    "code": "EST",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Estonia",
+    "code": "EST",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eswatini",
+    "code": "SWZ",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eswatini",
+    "code": "SWZ",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Eswatini",
+    "code": "SWZ",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Ethiopia",
+    "code": "ETH",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Ethiopia",
+    "code": "ETH",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Ethiopia",
+    "code": "ETH",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Faroe Islands",
+    "code": "FRO",
+    "year": 2020,
+    "estimate": 17000000,
+    "upper": 22000000,
+    "lower": 12000000
+  },
+  {
+    "entity": "Faroe Islands",
+    "code": "FRO",
+    "year": 2021,
+    "estimate": 22000000,
+    "upper": 29000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "Faroe Islands",
+    "code": "FRO",
+    "year": 2022,
+    "estimate": 21000000,
+    "upper": 27000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Fiji",
+    "code": "FJI",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Fiji",
+    "code": "FJI",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Fiji",
+    "code": "FJI",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Finland",
+    "code": "FIN",
+    "year": 2020,
+    "estimate": 5000000,
+    "upper": 6000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Finland",
+    "code": "FIN",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 6000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Finland",
+    "code": "FIN",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 6000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "France",
+    "code": "FRA",
+    "year": 2020,
+    "estimate": 46000000,
+    "upper": 59000000,
+    "lower": 33000000
+  },
+  {
+    "entity": "France",
+    "code": "FRA",
+    "year": 2021,
+    "estimate": 42000000,
+    "upper": 55000000,
+    "lower": 29000000
+  },
+  {
+    "entity": "France",
+    "code": "FRA",
+    "year": 2022,
+    "estimate": 40000000,
+    "upper": 52000000,
+    "lower": 27000000
+  },
+  {
+    "entity": "French Guiana",
+    "code": "GUF",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "French Guiana",
+    "code": "GUF",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "French Guiana",
+    "code": "GUF",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "French Polynesia",
+    "code": "PYF",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "French Polynesia",
+    "code": "PYF",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "French Polynesia",
+    "code": "PYF",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gabon",
+    "code": "GAB",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gabon",
+    "code": "GAB",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gabon",
+    "code": "GAB",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gambia",
+    "code": "GMB",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gambia",
+    "code": "GMB",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Gambia",
+    "code": "GMB",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Georgia",
+    "code": "GEO",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Georgia",
+    "code": "GEO",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 7000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Georgia",
+    "code": "GEO",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 7000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Germany",
+    "code": "DEU",
+    "year": 2020,
+    "estimate": 25000000,
+    "upper": 35000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Germany",
+    "code": "DEU",
+    "year": 2021,
+    "estimate": 25000000,
+    "upper": 35000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Germany",
+    "code": "DEU",
+    "year": 2022,
+    "estimate": 24000000,
+    "upper": 35000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Ghana",
+    "code": "GHA",
+    "year": 2020,
+    "estimate": 200000000,
+    "upper": 240000000,
+    "lower": 160000000
+  },
+  {
+    "entity": "Ghana",
+    "code": "GHA",
+    "year": 2021,
+    "estimate": 280000000,
+    "upper": 330000000,
+    "lower": 230000000
+  },
+  {
+    "entity": "Ghana",
+    "code": "GHA",
+    "year": 2022,
+    "estimate": 400000000,
+    "upper": 470000000,
+    "lower": 320000000
+  },
+  {
+    "entity": "Greece",
+    "code": "GRC",
+    "year": 2020,
+    "estimate": 310000000,
+    "upper": 360000000,
+    "lower": 250000000
+  },
+  {
+    "entity": "Greece",
+    "code": "GRC",
+    "year": 2021,
+    "estimate": 350000000,
+    "upper": 410000000,
+    "lower": 290000000
+  },
+  {
+    "entity": "Greece",
+    "code": "GRC",
+    "year": 2022,
+    "estimate": 350000000,
+    "upper": 410000000,
+    "lower": 290000000
+  },
+  {
+    "entity": "Grenada",
+    "code": "GRD",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Grenada",
+    "code": "GRD",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Grenada",
+    "code": "GRD",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guadeloupe",
+    "code": "GLP",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guadeloupe",
+    "code": "GLP",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guadeloupe",
+    "code": "GLP",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guam",
+    "code": "GUM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guam",
+    "code": "GUM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guam",
+    "code": "GUM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guatemala",
+    "code": "GTM",
+    "year": 2020,
+    "estimate": 34000000,
+    "upper": 44000000,
+    "lower": 24000000
+  },
+  {
+    "entity": "Guatemala",
+    "code": "GTM",
+    "year": 2021,
+    "estimate": 45000000,
+    "upper": 54000000,
+    "lower": 37000000
+  },
+  {
+    "entity": "Guatemala",
+    "code": "GTM",
+    "year": 2022,
+    "estimate": 49000000,
+    "upper": 57000000,
+    "lower": 40000000
+  },
+  {
+    "entity": "Guinea",
+    "code": "GIN",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Guinea",
+    "code": "GIN",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Guinea",
+    "code": "GIN",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Guinea-Bissau",
+    "code": "GNB",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guinea-Bissau",
+    "code": "GNB",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guinea-Bissau",
+    "code": "GNB",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guyana",
+    "code": "GUY",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guyana",
+    "code": "GUY",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Guyana",
+    "code": "GUY",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Haiti",
+    "code": "HTI",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Haiti",
+    "code": "HTI",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Haiti",
+    "code": "HTI",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Honduras",
+    "code": "HND",
+    "year": 2020,
+    "estimate": 78000000,
+    "upper": 97000000,
+    "lower": 58000000
+  },
+  {
+    "entity": "Honduras",
+    "code": "HND",
+    "year": 2021,
+    "estimate": 80000000,
+    "upper": 80000000,
+    "lower": 80000000
+  },
+  {
+    "entity": "Honduras",
+    "code": "HND",
+    "year": 2022,
+    "estimate": 100000000,
+    "upper": 100000000,
+    "lower": 100000000
+  },
+  {
+    "entity": "Hong Kong",
+    "code": "HKG",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Hong Kong",
+    "code": "HKG",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Hong Kong",
+    "code": "HKG",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Hungary",
+    "code": "HUN",
+    "year": 2020,
+    "estimate": 21000000,
+    "upper": 29000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Hungary",
+    "code": "HUN",
+    "year": 2021,
+    "estimate": 21000000,
+    "upper": 29000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Hungary",
+    "code": "HUN",
+    "year": 2022,
+    "estimate": 23000000,
+    "upper": 32000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Iceland",
+    "code": "ISL",
+    "year": 2020,
+    "estimate": 11000000,
+    "upper": 14000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Iceland",
+    "code": "ISL",
+    "year": 2021,
+    "estimate": 14000000,
+    "upper": 17000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Iceland",
+    "code": "ISL",
+    "year": 2022,
+    "estimate": 13000000,
+    "upper": 17000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "India",
+    "code": "IND",
+    "year": 2020,
+    "estimate": 8500000000,
+    "upper": 11000000000,
+    "lower": 5600000000
+  },
+  {
+    "entity": "India",
+    "code": "IND",
+    "year": 2021,
+    "estimate": 9300000000,
+    "upper": 12000000000,
+    "lower": 6200000000
+  },
+  {
+    "entity": "India",
+    "code": "IND",
+    "year": 2022,
+    "estimate": 10000000000,
+    "upper": 14000000000,
+    "lower": 6800000000
+  },
+  {
+    "entity": "Indonesia",
+    "code": "IDN",
+    "year": 2020,
+    "estimate": 14000000000,
+    "upper": 19000000000,
+    "lower": 7900000000
+  },
+  {
+    "entity": "Indonesia",
+    "code": "IDN",
+    "year": 2021,
+    "estimate": 14000000000,
+    "upper": 20000000000,
+    "lower": 8300000000
+  },
+  {
+    "entity": "Indonesia",
+    "code": "IDN",
+    "year": 2022,
+    "estimate": 14000000000,
+    "upper": 20000000000,
+    "lower": 8200000000
+  },
+  {
+    "entity": "Iran",
+    "code": "IRN",
+    "year": 2020,
+    "estimate": 640000000,
+    "upper": 720000000,
+    "lower": 560000000
+  },
+  {
+    "entity": "Iran",
+    "code": "IRN",
+    "year": 2021,
+    "estimate": 630000000,
+    "upper": 700000000,
+    "lower": 550000000
+  },
+  {
+    "entity": "Iran",
+    "code": "IRN",
+    "year": 2022,
+    "estimate": 630000000,
+    "upper": 700000000,
+    "lower": 550000000
+  },
+  {
+    "entity": "Iraq",
+    "code": "IRQ",
+    "year": 2020,
+    "estimate": 27000000,
+    "upper": 34000000,
+    "lower": 21000000
+  },
+  {
+    "entity": "Iraq",
+    "code": "IRQ",
+    "year": 2021,
+    "estimate": 27000000,
+    "upper": 34000000,
+    "lower": 21000000
+  },
+  {
+    "entity": "Iraq",
+    "code": "IRQ",
+    "year": 2022,
+    "estimate": 28000000,
+    "upper": 34000000,
+    "lower": 22000000
+  },
+  {
+    "entity": "Ireland",
+    "code": "IRL",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Ireland",
+    "code": "IRL",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Ireland",
+    "code": "IRL",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Israel",
+    "code": "ISR",
+    "year": 2020,
+    "estimate": 31000000,
+    "upper": 38000000,
+    "lower": 23000000
+  },
+  {
+    "entity": "Israel",
+    "code": "ISR",
+    "year": 2021,
+    "estimate": 31000000,
+    "upper": 38000000,
+    "lower": 25000000
+  },
+  {
+    "entity": "Israel",
+    "code": "ISR",
+    "year": 2022,
+    "estimate": 29000000,
+    "upper": 35000000,
+    "lower": 22000000
+  },
+  {
+    "entity": "Italy",
+    "code": "ITA",
+    "year": 2020,
+    "estimate": 71000000,
+    "upper": 87000000,
+    "lower": 54000000
+  },
+  {
+    "entity": "Italy",
+    "code": "ITA",
+    "year": 2021,
+    "estimate": 82000000,
+    "upper": 100000000,
+    "lower": 63000000
+  },
+  {
+    "entity": "Italy",
+    "code": "ITA",
+    "year": 2022,
+    "estimate": 67000000,
+    "upper": 83000000,
+    "lower": 52000000
+  },
+  {
+    "entity": "Jamaica",
+    "code": "JAM",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Jamaica",
+    "code": "JAM",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Jamaica",
+    "code": "JAM",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Japan",
+    "code": "JPN",
+    "year": 2020,
+    "estimate": 400000000,
+    "upper": 530000000,
+    "lower": 270000000
+  },
+  {
+    "entity": "Japan",
+    "code": "JPN",
+    "year": 2021,
+    "estimate": 440000000,
+    "upper": 580000000,
+    "lower": 300000000
+  },
+  {
+    "entity": "Japan",
+    "code": "JPN",
+    "year": 2022,
+    "estimate": 420000000,
+    "upper": 550000000,
+    "lower": 290000000
+  },
+  {
+    "entity": "Jordan",
+    "code": "JOR",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Jordan",
+    "code": "JOR",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Jordan",
+    "code": "JOR",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 6000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2020,
+    "estimate": 8000000,
+    "upper": 10000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2021,
+    "estimate": 6000000,
+    "upper": 8000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2022,
+    "estimate": 11000000,
+    "upper": 15000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Kenya",
+    "code": "KEN",
+    "year": 2020,
+    "estimate": 47000000,
+    "upper": 59000000,
+    "lower": 34000000
+  },
+  {
+    "entity": "Kenya",
+    "code": "KEN",
+    "year": 2021,
+    "estimate": 68000000,
+    "upper": 73000000,
+    "lower": 64000000
+  },
+  {
+    "entity": "Kenya",
+    "code": "KEN",
+    "year": 2022,
+    "estimate": 69000000,
+    "upper": 74000000,
+    "lower": 65000000
+  },
+  {
+    "entity": "Kiribati",
+    "code": "KIR",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Kiribati",
+    "code": "KIR",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Kiribati",
+    "code": "KIR",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Kuwait",
+    "code": "KWT",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Kuwait",
+    "code": "KWT",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Kuwait",
+    "code": "KWT",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2020,
+    "estimate": 7000000,
+    "upper": 11000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2021,
+    "estimate": 15000000,
+    "upper": 25000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2022,
+    "estimate": 33000000,
+    "upper": 60000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Laos",
+    "code": "LAO",
+    "year": 2020,
+    "estimate": 240000000,
+    "upper": 310000000,
+    "lower": 170000000
+  },
+  {
+    "entity": "Laos",
+    "code": "LAO",
+    "year": 2021,
+    "estimate": 280000000,
+    "upper": 340000000,
+    "lower": 220000000
+  },
+  {
+    "entity": "Laos",
+    "code": "LAO",
+    "year": 2022,
+    "estimate": 330000000,
+    "upper": 390000000,
+    "lower": 260000000
+  },
+  {
+    "entity": "Latvia",
+    "code": "LVA",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Latvia",
+    "code": "LVA",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Latvia",
+    "code": "LVA",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lebanon",
+    "code": "LBN",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lebanon",
+    "code": "LBN",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lebanon",
+    "code": "LBN",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lesotho",
+    "code": "LSO",
+    "year": 2020,
+    "estimate": 5000000,
+    "upper": 9000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Lesotho",
+    "code": "LSO",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lesotho",
+    "code": "LSO",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 7000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Liberia",
+    "code": "LBR",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Liberia",
+    "code": "LBR",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Liberia",
+    "code": "LBR",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Libya",
+    "code": "LBY",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Libya",
+    "code": "LBY",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Libya",
+    "code": "LBY",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Lithuania",
+    "code": "LTU",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 6000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Lithuania",
+    "code": "LTU",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 7000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Lithuania",
+    "code": "LTU",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 7000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Madagascar",
+    "code": "MDG",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Madagascar",
+    "code": "MDG",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Madagascar",
+    "code": "MDG",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 5000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Malawi",
+    "code": "MWI",
+    "year": 2020,
+    "estimate": 22000000,
+    "upper": 28000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Malawi",
+    "code": "MWI",
+    "year": 2021,
+    "estimate": 26000000,
+    "upper": 30000000,
+    "lower": 21000000
+  },
+  {
+    "entity": "Malawi",
+    "code": "MWI",
+    "year": 2022,
+    "estimate": 18000000,
+    "upper": 21000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Malaysia",
+    "code": "MYS",
+    "year": 2020,
+    "estimate": 360000000,
+    "upper": 510000000,
+    "lower": 200000000
+  },
+  {
+    "entity": "Malaysia",
+    "code": "MYS",
+    "year": 2021,
+    "estimate": 400000000,
+    "upper": 560000000,
+    "lower": 240000000
+  },
+  {
+    "entity": "Malaysia",
+    "code": "MYS",
+    "year": 2022,
+    "estimate": 470000000,
+    "upper": 670000000,
+    "lower": 270000000
+  },
+  {
+    "entity": "Mali",
+    "code": "MLI",
+    "year": 2020,
+    "estimate": 15000000,
+    "upper": 19000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Mali",
+    "code": "MLI",
+    "year": 2021,
+    "estimate": 19000000,
+    "upper": 22000000,
+    "lower": 17000000
+  },
+  {
+    "entity": "Mali",
+    "code": "MLI",
+    "year": 2022,
+    "estimate": 20000000,
+    "upper": 23000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Malta",
+    "code": "MLT",
+    "year": 2020,
+    "estimate": 8000000,
+    "upper": 10000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Malta",
+    "code": "MLT",
+    "year": 2021,
+    "estimate": 9000000,
+    "upper": 10000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Malta",
+    "code": "MLT",
+    "year": 2022,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Marshall Islands",
+    "code": "MHL",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Marshall Islands",
+    "code": "MHL",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Marshall Islands",
+    "code": "MHL",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Martinique",
+    "code": "MTQ",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Martinique",
+    "code": "MTQ",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Martinique",
+    "code": "MTQ",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Mauritius",
+    "code": "MUS",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Mauritius",
+    "code": "MUS",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Mauritius",
+    "code": "MUS",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Mexico",
+    "code": "MEX",
+    "year": 2020,
+    "estimate": 280000000,
+    "upper": 350000000,
+    "lower": 200000000
+  },
+  {
+    "entity": "Mexico",
+    "code": "MEX",
+    "year": 2021,
+    "estimate": 130000000,
+    "upper": 160000000,
+    "lower": 110000000
+  },
+  {
+    "entity": "Mexico",
+    "code": "MEX",
+    "year": 2022,
+    "estimate": 150000000,
+    "upper": 180000000,
+    "lower": 120000000
+  },
+  {
+    "entity": "Moldova",
+    "code": "MDA",
+    "year": 2020,
+    "estimate": 14000000,
+    "upper": 19000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Moldova",
+    "code": "MDA",
+    "year": 2021,
+    "estimate": 19000000,
+    "upper": 27000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Moldova",
+    "code": "MDA",
+    "year": 2022,
+    "estimate": 19000000,
+    "upper": 27000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Montenegro",
+    "code": "MNE",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Montenegro",
+    "code": "MNE",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Montenegro",
+    "code": "MNE",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Morocco",
+    "code": "MAR",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Morocco",
+    "code": "MAR",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Morocco",
+    "code": "MAR",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Mozambique",
+    "code": "MOZ",
+    "year": 2020,
+    "estimate": 9000000,
+    "upper": 11000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Mozambique",
+    "code": "MOZ",
+    "year": 2021,
+    "estimate": 12000000,
+    "upper": 14000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Mozambique",
+    "code": "MOZ",
+    "year": 2022,
+    "estimate": 16000000,
+    "upper": 18000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Myanmar",
+    "code": "MMR",
+    "year": 2020,
+    "estimate": 2300000000,
+    "upper": 3100000000,
+    "lower": 1400000000
+  },
+  {
+    "entity": "Myanmar",
+    "code": "MMR",
+    "year": 2021,
+    "estimate": 2300000000,
+    "upper": 3100000000,
+    "lower": 1500000000
+  },
+  {
+    "entity": "Myanmar",
+    "code": "MMR",
+    "year": 2022,
+    "estimate": 2400000000,
+    "upper": 3200000000,
+    "lower": 1500000000
+  },
+  {
+    "entity": "Namibia",
+    "code": "NAM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Namibia",
+    "code": "NAM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Namibia",
+    "code": "NAM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nauru",
+    "code": "NRU",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nauru",
+    "code": "NRU",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nauru",
+    "code": "NRU",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nepal",
+    "code": "NPL",
+    "year": 2020,
+    "estimate": 90000000,
+    "upper": 110000000,
+    "lower": 67000000
+  },
+  {
+    "entity": "Nepal",
+    "code": "NPL",
+    "year": 2021,
+    "estimate": 99000000,
+    "upper": 120000000,
+    "lower": 75000000
+  },
+  {
+    "entity": "Nepal",
+    "code": "NPL",
+    "year": 2022,
+    "estimate": 100000000,
+    "upper": 130000000,
+    "lower": 78000000
+  },
+  {
+    "entity": "Netherlands",
+    "code": "NLD",
+    "year": 2020,
+    "estimate": 11000000,
+    "upper": 16000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Netherlands",
+    "code": "NLD",
+    "year": 2021,
+    "estimate": 10000000,
+    "upper": 15000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Netherlands",
+    "code": "NLD",
+    "year": 2022,
+    "estimate": 11000000,
+    "upper": 16000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "New Caledonia",
+    "code": "NCL",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "New Caledonia",
+    "code": "NCL",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "New Caledonia",
+    "code": "NCL",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "New Zealand",
+    "code": "NZL",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "New Zealand",
+    "code": "NZL",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 5000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "New Zealand",
+    "code": "NZL",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Nicaragua",
+    "code": "NIC",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nicaragua",
+    "code": "NIC",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Nicaragua",
+    "code": "NIC",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Niger",
+    "code": "NER",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Niger",
+    "code": "NER",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Niger",
+    "code": "NER",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Nigeria",
+    "code": "NGA",
+    "year": 2020,
+    "estimate": 530000000,
+    "upper": 740000000,
+    "lower": 310000000
+  },
+  {
+    "entity": "Nigeria",
+    "code": "NGA",
+    "year": 2021,
+    "estimate": 560000000,
+    "upper": 790000000,
+    "lower": 330000000
+  },
+  {
+    "entity": "Nigeria",
+    "code": "NGA",
+    "year": 2022,
+    "estimate": 520000000,
+    "upper": 740000000,
+    "lower": 310000000
+  },
+  {
+    "entity": "North Korea",
+    "code": "PRK",
+    "year": 2020,
+    "estimate": 24000000,
+    "upper": 32000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "North Korea",
+    "code": "PRK",
+    "year": 2021,
+    "estimate": 24000000,
+    "upper": 32000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "North Korea",
+    "code": "PRK",
+    "year": 2022,
+    "estimate": 24000000,
+    "upper": 32000000,
+    "lower": 16000000
+  },
+  {
+    "entity": "North Macedonia",
+    "code": "MKD",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "North Macedonia",
+    "code": "MKD",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "North Macedonia",
+    "code": "MKD",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Northern Mariana Islands",
+    "code": "MNP",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Northern Mariana Islands",
+    "code": "MNP",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Northern Mariana Islands",
+    "code": "MNP",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Norway",
+    "code": "NOR",
+    "year": 2020,
+    "estimate": 270000000,
+    "upper": 320000000,
+    "lower": 210000000
+  },
+  {
+    "entity": "Norway",
+    "code": "NOR",
+    "year": 2021,
+    "estimate": 300000000,
+    "upper": 360000000,
+    "lower": 240000000
+  },
+  {
+    "entity": "Norway",
+    "code": "NOR",
+    "year": 2022,
+    "estimate": 290000000,
+    "upper": 360000000,
+    "lower": 230000000
+  },
+  {
+    "entity": "Oman",
+    "code": "OMN",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Oman",
+    "code": "OMN",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 5000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Oman",
+    "code": "OMN",
+    "year": 2022,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "Pakistan",
+    "code": "PAK",
+    "year": 2020,
+    "estimate": 160000000,
+    "upper": 220000000,
+    "lower": 110000000
+  },
+  {
+    "entity": "Pakistan",
+    "code": "PAK",
+    "year": 2021,
+    "estimate": 170000000,
+    "upper": 220000000,
+    "lower": 110000000
+  },
+  {
+    "entity": "Pakistan",
+    "code": "PAK",
+    "year": 2022,
+    "estimate": 170000000,
+    "upper": 220000000,
+    "lower": 110000000
+  },
+  {
+    "entity": "Palau",
+    "code": "PLW",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Palau",
+    "code": "PLW",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Palau",
+    "code": "PLW",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Palestine",
+    "code": "PSE",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Palestine",
+    "code": "PSE",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Palestine",
+    "code": "PSE",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Panama",
+    "code": "PAN",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Panama",
+    "code": "PAN",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Panama",
+    "code": "PAN",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 4000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 4000000
+  },
+  {
+    "entity": "Paraguay",
+    "code": "PRY",
+    "year": 2020,
+    "estimate": 24000000,
+    "upper": 29000000,
+    "lower": 18000000
+  },
+  {
+    "entity": "Paraguay",
+    "code": "PRY",
+    "year": 2021,
+    "estimate": 30000000,
+    "upper": 31000000,
+    "lower": 29000000
+  },
+  {
+    "entity": "Paraguay",
+    "code": "PRY",
+    "year": 2022,
+    "estimate": 47000000,
+    "upper": 48000000,
+    "lower": 46000000
+  },
+  {
+    "entity": "Peru",
+    "code": "PER",
+    "year": 2020,
+    "estimate": 260000000,
+    "upper": 290000000,
+    "lower": 220000000
+  },
+  {
+    "entity": "Peru",
+    "code": "PER",
+    "year": 2021,
+    "estimate": 250000000,
+    "upper": 280000000,
+    "lower": 220000000
+  },
+  {
+    "entity": "Peru",
+    "code": "PER",
+    "year": 2022,
+    "estimate": 290000000,
+    "upper": 330000000,
+    "lower": 260000000
+  },
+  {
+    "entity": "Philippines",
+    "code": "PHL",
+    "year": 2020,
+    "estimate": 2900000000,
+    "upper": 3700000000,
+    "lower": 2100000000
+  },
+  {
+    "entity": "Philippines",
+    "code": "PHL",
+    "year": 2021,
+    "estimate": 3100000000,
+    "upper": 3900000000,
+    "lower": 2300000000
+  },
+  {
+    "entity": "Philippines",
+    "code": "PHL",
+    "year": 2022,
+    "estimate": 2800000000,
+    "upper": 3500000000,
+    "lower": 2100000000
+  },
+  {
+    "entity": "Poland",
+    "code": "POL",
+    "year": 2020,
+    "estimate": 39000000,
+    "upper": 53000000,
+    "lower": 24000000
+  },
+  {
+    "entity": "Poland",
+    "code": "POL",
+    "year": 2021,
+    "estimate": 37000000,
+    "upper": 51000000,
+    "lower": 23000000
+  },
+  {
+    "entity": "Poland",
+    "code": "POL",
+    "year": 2022,
+    "estimate": 38000000,
+    "upper": 52000000,
+    "lower": 24000000
+  },
+  {
+    "entity": "Portugal",
+    "code": "PRT",
+    "year": 2020,
+    "estimate": 19000000,
+    "upper": 25000000,
+    "lower": 14000000
+  },
+  {
+    "entity": "Portugal",
+    "code": "PRT",
+    "year": 2021,
+    "estimate": 16000000,
+    "upper": 20000000,
+    "lower": 12000000
+  },
+  {
+    "entity": "Portugal",
+    "code": "PRT",
+    "year": 2022,
+    "estimate": 20000000,
+    "upper": 24000000,
+    "lower": 15000000
+  },
+  {
+    "entity": "Puerto Rico",
+    "code": "PRI",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Puerto Rico",
+    "code": "PRI",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Puerto Rico",
+    "code": "PRI",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Qatar",
+    "code": "QAT",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Qatar",
+    "code": "QAT",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Qatar",
+    "code": "QAT",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Reunion",
+    "code": "REU",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Reunion",
+    "code": "REU",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Reunion",
+    "code": "REU",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Romania",
+    "code": "ROU",
+    "year": 2020,
+    "estimate": 14000000,
+    "upper": 20000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Romania",
+    "code": "ROU",
+    "year": 2021,
+    "estimate": 13000000,
+    "upper": 19000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Romania",
+    "code": "ROU",
+    "year": 2022,
+    "estimate": 12000000,
+    "upper": 17000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Russia",
+    "code": "RUS",
+    "year": 2020,
+    "estimate": 170000000,
+    "upper": 230000000,
+    "lower": 110000000
+  },
+  {
+    "entity": "Russia",
+    "code": "RUS",
+    "year": 2021,
+    "estimate": 180000000,
+    "upper": 240000000,
+    "lower": 120000000
+  },
+  {
+    "entity": "Russia",
+    "code": "RUS",
+    "year": 2022,
+    "estimate": 180000000,
+    "upper": 250000000,
+    "lower": 120000000
+  },
+  {
+    "entity": "Rwanda",
+    "code": "RWA",
+    "year": 2020,
+    "estimate": 14000000,
+    "upper": 18000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Rwanda",
+    "code": "RWA",
+    "year": 2021,
+    "estimate": 27000000,
+    "upper": 28000000,
+    "lower": 27000000
+  },
+  {
+    "entity": "Rwanda",
+    "code": "RWA",
+    "year": 2022,
+    "estimate": 33000000,
+    "upper": 33000000,
+    "lower": 32000000
+  },
+  {
+    "entity": "Saint Kitts and Nevis",
+    "code": "KNA",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saint Kitts and Nevis",
+    "code": "KNA",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saint Kitts and Nevis",
+    "code": "KNA",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saint Lucia",
+    "code": "LCA",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saint Lucia",
+    "code": "LCA",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saint Lucia",
+    "code": "LCA",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Samoa",
+    "code": "WSM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Samoa",
+    "code": "WSM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Samoa",
+    "code": "WSM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2020,
+    "estimate": 110000000,
+    "upper": 130000000,
+    "lower": 84000000
+  },
+  {
+    "entity": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2021,
+    "estimate": 130000000,
+    "upper": 140000000,
+    "lower": 120000000
+  },
+  {
+    "entity": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2022,
+    "estimate": 140000000,
+    "upper": 150000000,
+    "lower": 130000000
+  },
+  {
+    "entity": "Senegal",
+    "code": "SEN",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Senegal",
+    "code": "SEN",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Senegal",
+    "code": "SEN",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Serbia",
+    "code": "SRB",
+    "year": 2020,
+    "estimate": 4000000,
+    "upper": 6000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Serbia",
+    "code": "SRB",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 8000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Serbia",
+    "code": "SRB",
+    "year": 2022,
+    "estimate": 4000000,
+    "upper": 6000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Sierra Leone",
+    "code": "SLE",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Sierra Leone",
+    "code": "SLE",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Sierra Leone",
+    "code": "SLE",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Singapore",
+    "code": "SGP",
+    "year": 2020,
+    "estimate": 9000000,
+    "upper": 11000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Singapore",
+    "code": "SGP",
+    "year": 2021,
+    "estimate": 9000000,
+    "upper": 11000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Singapore",
+    "code": "SGP",
+    "year": 2022,
+    "estimate": 8000000,
+    "upper": 10000000,
+    "lower": 7000000
+  },
+  {
+    "entity": "Slovakia",
+    "code": "SVK",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Slovakia",
+    "code": "SVK",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Slovakia",
+    "code": "SVK",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Slovenia",
+    "code": "SVN",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Slovenia",
+    "code": "SVN",
+    "year": 2021,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Slovenia",
+    "code": "SVN",
+    "year": 2022,
+    "estimate": 1000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Solomon Islands",
+    "code": "SLB",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Solomon Islands",
+    "code": "SLB",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Solomon Islands",
+    "code": "SLB",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "South Africa",
+    "code": "ZAF",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "South Africa",
+    "code": "ZAF",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "South Africa",
+    "code": "ZAF",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 5000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "South Korea",
+    "code": "KOR",
+    "year": 2020,
+    "estimate": 270000000,
+    "upper": 360000000,
+    "lower": 180000000
+  },
+  {
+    "entity": "South Korea",
+    "code": "KOR",
+    "year": 2021,
+    "estimate": 300000000,
+    "upper": 400000000,
+    "lower": 200000000
+  },
+  {
+    "entity": "South Korea",
+    "code": "KOR",
+    "year": 2022,
+    "estimate": 320000000,
+    "upper": 420000000,
+    "lower": 210000000
+  },
+  {
+    "entity": "South Sudan",
+    "code": "SSD",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "South Sudan",
+    "code": "SSD",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "South Sudan",
+    "code": "SSD",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Spain",
+    "code": "ESP",
+    "year": 2020,
+    "estimate": 110000000,
+    "upper": 130000000,
+    "lower": 89000000
+  },
+  {
+    "entity": "Spain",
+    "code": "ESP",
+    "year": 2021,
+    "estimate": 120000000,
+    "upper": 140000000,
+    "lower": 95000000
+  },
+  {
+    "entity": "Spain",
+    "code": "ESP",
+    "year": 2022,
+    "estimate": 130000000,
+    "upper": 150000000,
+    "lower": 100000000
+  },
+  {
+    "entity": "Sri Lanka",
+    "code": "LKA",
+    "year": 2020,
+    "estimate": 57000000,
+    "upper": 72000000,
+    "lower": 42000000
+  },
+  {
+    "entity": "Sri Lanka",
+    "code": "LKA",
+    "year": 2021,
+    "estimate": 72000000,
+    "upper": 77000000,
+    "lower": 67000000
+  },
+  {
+    "entity": "Sri Lanka",
+    "code": "LKA",
+    "year": 2022,
+    "estimate": 91000000,
+    "upper": 97000000,
+    "lower": 85000000
+  },
+  {
+    "entity": "Sudan",
+    "code": "SDN",
+    "year": 2020,
+    "estimate": 18000000,
+    "upper": 22000000,
+    "lower": 13000000
+  },
+  {
+    "entity": "Sudan",
+    "code": "SDN",
+    "year": 2021,
+    "estimate": 23000000,
+    "upper": 24000000,
+    "lower": 21000000
+  },
+  {
+    "entity": "Sudan",
+    "code": "SDN",
+    "year": 2022,
+    "estimate": 23000000,
+    "upper": 24000000,
+    "lower": 21000000
+  },
+  {
+    "entity": "Suriname",
+    "code": "SUR",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Suriname",
+    "code": "SUR",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Suriname",
+    "code": "SUR",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Sweden",
+    "code": "SWE",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Sweden",
+    "code": "SWE",
+    "year": 2021,
+    "estimate": 4000000,
+    "upper": 5000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Sweden",
+    "code": "SWE",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 6000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Switzerland",
+    "code": "CHE",
+    "year": 2020,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Switzerland",
+    "code": "CHE",
+    "year": 2021,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Switzerland",
+    "code": "CHE",
+    "year": 2022,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "Syria",
+    "code": "SYR",
+    "year": 2020,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Syria",
+    "code": "SYR",
+    "year": 2021,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Syria",
+    "code": "SYR",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 4000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Taiwan",
+    "code": "TWN",
+    "year": 2020,
+    "estimate": 440000000,
+    "upper": 580000000,
+    "lower": 310000000
+  },
+  {
+    "entity": "Taiwan",
+    "code": "TWN",
+    "year": 2021,
+    "estimate": 450000000,
+    "upper": 570000000,
+    "lower": 340000000
+  },
+  {
+    "entity": "Taiwan",
+    "code": "TWN",
+    "year": 2022,
+    "estimate": 430000000,
+    "upper": 530000000,
+    "lower": 320000000
+  },
+  {
+    "entity": "Tajikistan",
+    "code": "TJK",
+    "year": 2020,
+    "estimate": 1000000,
+    "upper": 1000000,
+    "lower": 500000
+  },
+  {
+    "entity": "Tajikistan",
+    "code": "TJK",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Tajikistan",
+    "code": "TJK",
+    "year": 2022,
+    "estimate": 2000000,
+    "upper": 3000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Tanzania",
+    "code": "TZA",
+    "year": 2020,
+    "estimate": 35500000,
+    "upper": 44500000,
+    "lower": 26500000
+  },
+  {
+    "entity": "Tanzania",
+    "code": "TZA",
+    "year": 2021,
+    "estimate": 67500000,
+    "upper": 68500000,
+    "lower": 67500000
+  },
+  {
+    "entity": "Tanzania",
+    "code": "TZA",
+    "year": 2022,
+    "estimate": 78500000,
+    "upper": 78500000,
+    "lower": 77500000
+  },
+  {
+    "entity": "Thailand",
+    "code": "THA",
+    "year": 2020,
+    "estimate": 1600000000,
+    "upper": 2400000000,
+    "lower": 830000000
+  },
+  {
+    "entity": "Thailand",
+    "code": "THA",
+    "year": 2021,
+    "estimate": 1600000000,
+    "upper": 2400000000,
+    "lower": 800000000
+  },
+  {
+    "entity": "Thailand",
+    "code": "THA",
+    "year": 2022,
+    "estimate": 1600000000,
+    "upper": 2500000000,
+    "lower": 820000000
+  },
+  {
+    "entity": "Togo",
+    "code": "TGO",
+    "year": 2020,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 1000000
+  },
+  {
+    "entity": "Togo",
+    "code": "TGO",
+    "year": 2021,
+    "estimate": 2000000,
+    "upper": 2000000,
+    "lower": 2000000
+  },
+  {
+    "entity": "Togo",
+    "code": "TGO",
+    "year": 2022,
+    "estimate": 3000000,
+    "upper": 3000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Trinidad and Tobago",
+    "code": "TTO",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Trinidad and Tobago",
+    "code": "TTO",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Trinidad and Tobago",
+    "code": "TTO",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Tunisia",
+    "code": "TUN",
+    "year": 2020,
+    "estimate": 60000000,
+    "upper": 71000000,
+    "lower": 50000000
+  },
+  {
+    "entity": "Tunisia",
+    "code": "TUN",
+    "year": 2021,
+    "estimate": 67000000,
+    "upper": 78000000,
+    "lower": 56000000
+  },
+  {
+    "entity": "Tunisia",
+    "code": "TUN",
+    "year": 2022,
+    "estimate": 54000000,
+    "upper": 63000000,
+    "lower": 46000000
+  },
+  {
+    "entity": "Turkey",
+    "code": "TUR",
+    "year": 2020,
+    "estimate": 1200000000,
+    "upper": 1600000000,
+    "lower": 900000000
+  },
+  {
+    "entity": "Turkey",
+    "code": "TUR",
+    "year": 2021,
+    "estimate": 1400000000,
+    "upper": 1800000000,
+    "lower": 1000000000
+  },
+  {
+    "entity": "Turkey",
+    "code": "TUR",
+    "year": 2022,
+    "estimate": 1500000000,
+    "upper": 1900000000,
+    "lower": 1100000000
+  },
+  {
+    "entity": "Turkmenistan",
+    "code": "TKM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Turkmenistan",
+    "code": "TKM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Turkmenistan",
+    "code": "TKM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Tuvalu",
+    "code": "TUV",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Tuvalu",
+    "code": "TUV",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Tuvalu",
+    "code": "TUV",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Uganda",
+    "code": "UGA",
+    "year": 2020,
+    "estimate": 190000000,
+    "upper": 210000000,
+    "lower": 170000000
+  },
+  {
+    "entity": "Uganda",
+    "code": "UGA",
+    "year": 2021,
+    "estimate": 210000000,
+    "upper": 240000000,
+    "lower": 190000000
+  },
+  {
+    "entity": "Uganda",
+    "code": "UGA",
+    "year": 2022,
+    "estimate": 150000000,
+    "upper": 170000000,
+    "lower": 140000000
+  },
+  {
+    "entity": "Ukraine",
+    "code": "UKR",
+    "year": 2020,
+    "estimate": 19000000,
+    "upper": 26000000,
+    "lower": 11000000
+  },
+  {
+    "entity": "Ukraine",
+    "code": "UKR",
+    "year": 2021,
+    "estimate": 18000000,
+    "upper": 25000000,
+    "lower": 10000000
+  },
+  {
+    "entity": "Ukraine",
+    "code": "UKR",
+    "year": 2022,
+    "estimate": 14000000,
+    "upper": 20000000,
+    "lower": 9000000
+  },
+  {
+    "entity": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2020,
+    "estimate": 7000000,
+    "upper": 8000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2021,
+    "estimate": 6000000,
+    "upper": 7000000,
+    "lower": 5000000
+  },
+  {
+    "entity": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2022,
+    "estimate": 8000000,
+    "upper": 9000000,
+    "lower": 6000000
+  },
+  {
+    "entity": "United Kingdom",
+    "code": "GBR",
+    "year": 2020,
+    "estimate": 52000000,
+    "upper": 61000000,
+    "lower": 43000000
+  },
+  {
+    "entity": "United Kingdom",
+    "code": "GBR",
+    "year": 2021,
+    "estimate": 55000000,
+    "upper": 65000000,
+    "lower": 46000000
+  },
+  {
+    "entity": "United Kingdom",
+    "code": "GBR",
+    "year": 2022,
+    "estimate": 48000000,
+    "upper": 56000000,
+    "lower": 39000000
+  },
+  {
+    "entity": "United States",
+    "code": "USA",
+    "year": 2020,
+    "estimate": 260000000,
+    "upper": 280000000,
+    "lower": 240000000
+  },
+  {
+    "entity": "United States",
+    "code": "USA",
+    "year": 2021,
+    "estimate": 260000000,
+    "upper": 280000000,
+    "lower": 250000000
+  },
+  {
+    "entity": "United States",
+    "code": "USA",
+    "year": 2022,
+    "estimate": 270000000,
+    "upper": 280000000,
+    "lower": 250000000
+  },
+  {
+    "entity": "United States Virgin Islands",
+    "code": "VIR",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "United States Virgin Islands",
+    "code": "VIR",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "United States Virgin Islands",
+    "code": "VIR",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Uruguay",
+    "code": "URY",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Uruguay",
+    "code": "URY",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Uruguay",
+    "code": "URY",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Uzbekistan",
+    "code": "UZB",
+    "year": 2020,
+    "estimate": 120000000,
+    "upper": 160000000,
+    "lower": 75000000
+  },
+  {
+    "entity": "Uzbekistan",
+    "code": "UZB",
+    "year": 2021,
+    "estimate": 140000000,
+    "upper": 190000000,
+    "lower": 92000000
+  },
+  {
+    "entity": "Uzbekistan",
+    "code": "UZB",
+    "year": 2022,
+    "estimate": 160000000,
+    "upper": 210000000,
+    "lower": 100000000
+  },
+  {
+    "entity": "Vanuatu",
+    "code": "VUT",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Vanuatu",
+    "code": "VUT",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Vanuatu",
+    "code": "VUT",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Venezuela",
+    "code": "VEN",
+    "year": 2020,
+    "estimate": 5000000,
+    "upper": 7000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Venezuela",
+    "code": "VEN",
+    "year": 2021,
+    "estimate": 5000000,
+    "upper": 8000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Venezuela",
+    "code": "VEN",
+    "year": 2022,
+    "estimate": 5000000,
+    "upper": 8000000,
+    "lower": 3000000
+  },
+  {
+    "entity": "Vietnam",
+    "code": "VNM",
+    "year": 2020,
+    "estimate": 4600000000,
+    "upper": 6100000000,
+    "lower": 3200000000
+  },
+  {
+    "entity": "Vietnam",
+    "code": "VNM",
+    "year": 2021,
+    "estimate": 4700000000,
+    "upper": 6200000000,
+    "lower": 3300000000
+  },
+  {
+    "entity": "Vietnam",
+    "code": "VNM",
+    "year": 2022,
+    "estimate": 4800000000,
+    "upper": 6300000000,
+    "lower": 3400000000
+  },
+  {
+    "entity": "Yemen",
+    "code": "YEM",
+    "year": 2020,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Yemen",
+    "code": "YEM",
+    "year": 2021,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Yemen",
+    "code": "YEM",
+    "year": 2022,
+    "estimate": 500000,
+    "upper": 500000,
+    "lower": 500000
+  },
+  {
+    "entity": "Zambia",
+    "code": "ZMB",
+    "year": 2020,
+    "estimate": 120000000,
+    "upper": 130000000,
+    "lower": 120000000
+  },
+  {
+    "entity": "Zambia",
+    "code": "ZMB",
+    "year": 2021,
+    "estimate": 170000000,
+    "upper": 180000000,
+    "lower": 170000000
+  },
+  {
+    "entity": "Zambia",
+    "code": "ZMB",
+    "year": 2022,
+    "estimate": 210000000,
+    "upper": 220000000,
+    "lower": 200000000
+  },
+  {
+    "entity": "Zimbabwe",
+    "code": "ZWE",
+    "year": 2020,
+    "estimate": 50000000,
+    "upper": 61000000,
+    "lower": 39000000
+  },
+  {
+    "entity": "Zimbabwe",
+    "code": "ZWE",
+    "year": 2021,
+    "estimate": 8000000,
+    "upper": 9000000,
+    "lower": 8000000
+  },
+  {
+    "entity": "Zimbabwe",
+    "code": "ZWE",
+    "year": 2022,
+    "estimate": 16000000,
+    "upper": 17000000,
+    "lower": 15000000
+  }
+]
