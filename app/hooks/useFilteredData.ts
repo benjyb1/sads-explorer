@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { SAD_SCENARIOS, SadScenario, PAIN_SCORE } from '../data/sads-scenarios';
+import { SAD_SCENARIOS, SadScenario, PAIN_SCORE, getDisplayAnimal } from '../data/sads-scenarios';
 import { useDashboardStore } from '../store/dashboardStore';
 
 export interface AggregatedSpecies {
@@ -31,12 +31,15 @@ export function useAggregatedBySpecies(): AggregatedSpecies[] {
   return useMemo(() => {
     const map = new Map<string, SadScenario[]>();
     for (const s of filtered) {
-      const list = map.get(s.animal) ?? [];
+      // Merge Layers / Broilers / Male chicks → 'Chickens' for display
+      const key = getDisplayAnimal(s.animal);
+      const list = map.get(key) ?? [];
       list.push(s);
-      map.set(s.animal, list);
+      map.set(key, list);
     }
 
     return Array.from(map.entries()).map(([animal, scenarios]) => {
+      // `animal` is already the display key (e.g. 'Chickens' for all chicken sub-types)
       const totalBurden = scenarios.reduce((a, s) => a + s.totalSadBurden, 0);
       const totalAnimals = Math.max(...scenarios.map(s => s.animalsSlaughteredPerYear));
       const avgSads = scenarios.some(s => s.avgSadsPerFarmingYear !== null)

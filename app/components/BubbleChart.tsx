@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import { useFilteredScenarios } from '../hooks/useFilteredData';
-import { PAIN_COLOURS, SPECIES_COLOURS, SadScenario } from '../data/sads-scenarios';
+import { PAIN_COLOURS, SPECIES_COLOURS, SadScenario, getDisplayAnimal } from '../data/sads-scenarios';
 import { useDashboardStore } from '../store/dashboardStore';
 import { formatSads, formatAnimals } from './Tooltip';
 
@@ -124,7 +124,7 @@ export function BubbleChart() {
 
     bubble.append('circle')
       .attr('r', d => sizeScale(d.totalSadBurden))
-      .attr('fill', d => SPECIES_COLOURS[d.animal] ?? '#4a5568')
+      .attr('fill', d => SPECIES_COLOURS[getDisplayAnimal(d.animal)] ?? SPECIES_COLOURS[d.animal] ?? '#4a5568')
       .attr('fill-opacity', 0.65)
       .attr('stroke', d => PAIN_COLOURS[d.painLevel])
       .attr('stroke-width', 1.5);
@@ -142,7 +142,7 @@ export function BubbleChart() {
       .text(d => {
         const r = sizeScale(d.totalSadBurden);
         if (r < 20) return '';
-        const name = d.animal;
+        const name = getDisplayAnimal(d.animal);
         return name.length > 10 ? name.slice(0, 9) + '…' : name;
       });
 
@@ -170,7 +170,7 @@ export function BubbleChart() {
           style={{ left: Math.min(tooltip.x + 14, window.innerWidth - 260), top: Math.max(tooltip.y - 8, 8) }}
         >
           <div className="font-semibold text-[#e6edf3] mb-1">{tooltip.s.scenario}</div>
-          <div className="text-[#8b949e] text-xs mb-2">{tooltip.s.animal}</div>
+          <div className="text-[#8b949e] text-xs mb-2">{getDisplayAnimal(tooltip.s.animal)}</div>
           <span
             className="inline-block rounded px-1.5 py-0.5 text-xs font-medium text-white mb-2"
             style={{ backgroundColor: PAIN_COLOURS[tooltip.s.painLevel] }}

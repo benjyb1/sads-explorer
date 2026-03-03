@@ -24,7 +24,8 @@ const COUNTRY_POP: Record<string, number> = {
 
 interface GeoFeature {
   type: string;
-  properties: { name: string; iso_a3: string };
+  // The datasets/geo-countries GeoJSON uses 'ISO3166-1-Alpha-3' for the ISO3 code
+  properties: { name: string; 'ISO3166-1-Alpha-3': string };
   geometry: unknown;
 }
 
@@ -32,16 +33,16 @@ export function WorldMap() {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [dims, setDims] = useState({ width: 900, height: 500 });
-  const [geoData, setGeoData] = useState<unknown>(null);
+  const [countries110, setCountries110] = useState<{ features: GeoFeature[] } | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; entry: CountrySadsEntry | null }>({ x: 0, y: 0, entry: null });
   const { countryData, loading } = useCountryData();
   const { selectedYear, setSelectedYear, normalisation, setSelectedCountry, selectedCountry } = useDashboardStore();
 
-  // Load world geo JSON
+  // Load local GeoJSON (served from /public/world.geojson)
   useEffect(() => {
-    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+    fetch('/world.geojson')
       .then(r => r.json())
-      .then(setGeoData)
+      .then(setCountries110)
       .catch(console.error);
   }, []);
 
@@ -85,45 +86,6 @@ export function WorldMap() {
   }, [yearMap, getDisplayValue]);
 
   useEffect(() => {
-    if (!svgRef.current || !geoData || dims.width === 0 || loading) return;
-
-    const svg = d3.select(svgRef.current);
-    svg.selectAll('*').remove();
-
-    const { width, height } = dims;
-
-    const projection = d3.geoNaturalEarth1()
-      .scale(width / 6.3)
-      .translate([width / 2, height / 2]);
-
-    const path = d3.geoPath().projection(projection);
-
-    const topoData = geoData as { objects: { countries: unknown } };
-
-    // We need topojson — use the CDN-loaded topology directly with d3-geo
-    // Instead, fetch GeoJSON directly
-    // Actually we fetched countries-110m which is topojson. We need to convert.
-    // Let's use a simpler approach with d3-geo-projection and topojson-client
-
-    const colourScale = d3.scaleSequential()
-      .domain([0, maxValue || 1])
-      .interpolator(d3.interpolateRgb('#1c2128', '#da3633'));
-
-    // Since topojson isn't installed, load a geojson alternative
-    return;
-  }, [geoData, dims, yearMap, maxValue, loading, getDisplayValue, selectedCountry]);
-
-  // Simplified SVG map using direct GeoJSON
-  const [countries110, setCountries110] = useState<{ features: GeoFeature[] } | null>(null);
-
-  useEffect(() => {
-    fetch('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson')
-      .then(r => r.json())
-      .then(setCountries110)
-      .catch(console.error);
-  }, []);
-
-  useEffect(() => {
     if (!svgRef.current || !countries110 || dims.width === 0) return;
 
     const svg = d3.select(svgRef.current);
@@ -164,23 +126,33 @@ export function WorldMap() {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .attr('d', path as any)
       .attr('fill', d => {
-        const code = d.properties.iso_a3;
+        const code = d.properties['ISO3166-1-Alpha-3'];
         const entry = yearMap.get(code);
         if (!entry) return '#21262d';
-        return colourScale(getDisplayValue(entry));
+        const val = getDisplayValue(entry);
+        return val > 0 ? colourScale(val) : '#21262d';
       })
-      .attr('stroke', '#0d1117')
-      .attr('stroke-width', 0.4)
-      .style('cursor', d => yearMap.has(d.properties.iso_a3) ? 'pointer' : 'default')
+      .attr('stroke', d => {
+        const code = d.properties['ISO3166-1-Alpha-3'];
+        return selectedCountry === code ? '#e6edf3' : '#0d1117';
+      })
+      .attr('stroke-width', d => {
+        const code = d.properties['ISO3166-1-Alpha-3'];
+        return selectedCountry === code ? 1.5 : 0.4;
+      })
+      .style('cursor', d => {
+        const code = d.properties['ISO3166-1-Alpha-3'];
+        return yearMap.has(code) ? 'pointer' : 'default';
+      })
       .on('mousemove', (event, d) => {
-        const code = d.properties.iso_a3;
+        const code = d.properties['ISO3166-1-Alpha-3'];
         const entry = yearMap.get(code) ?? null;
         if (entry) setTooltip({ x: event.clientX, y: event.clientY, entry });
         else setTooltip(t => ({ ...t, entry: null }));
       })
       .on('mouseleave', () => setTooltip(t => ({ ...t, entry: null })))
       .on('click', (_, d) => {
-        const code = d.properties.iso_a3;
+        const code = d.properties['ISO3166-1-Alpha-3'];
         setSelectedCountry(selectedCountry === code ? null : code);
       });
 
@@ -213,24 +185,24 @@ export function WorldMap() {
         />
         <span className="font-mono text-sm text-[#e6edf3] w-12 text-right">{selectedYear}</span>
         <span className="text-xs text-[#8b949e] ml-2">
-          {normalisation === 'perCapita' ? 'SADs per capita' : 'Total SADs'}
+          {normalisation === 'perCapita' ? 'SADs per capita' : 'Total SADs'} · {yearMap.size} countries with data
         </span>
       </div>
 
-      <div className="flex-1 relative">
+      <div className="flex-1 relative overflow-hidden">
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center text-[#8b949e] text-sm z-10">
+            Loading country data…
+          </div>
+        )}
         <svg ref={svgRef} width={dims.width} height={dims.height} className="block" />
 
         {/* Colour legend */}
         <div className="absolute bottom-4 left-4 flex items-center gap-2 text-xs text-[#8b949e]">
           <span>Low</span>
-          <div
-            className="w-24 h-2 rounded"
-            style={{
-              background: 'linear-gradient(to right, #1c2128, #8b2222)',
-            }}
-          />
+          <div className="w-24 h-2 rounded" style={{ background: 'linear-gradient(to right, #1c2128, #8b2222)' }} />
           <span>High</span>
-          <span className="ml-2 text-[#6e7681]">(scroll to zoom, drag to pan)</span>
+          <span className="ml-3 text-[#6e7681]">Scroll to zoom · drag to pan · click country for detail</span>
         </div>
 
         {/* Country detail panel */}
@@ -238,12 +210,7 @@ export function WorldMap() {
           <div className="absolute top-4 right-4 w-64 rounded-lg border border-[#30363d] bg-[#161b22] p-3 text-sm shadow-xl">
             <div className="flex items-center justify-between mb-2">
               <span className="font-semibold text-[#e6edf3]">{selectedEntry.entity}</span>
-              <button
-                onClick={() => setSelectedCountry(null)}
-                className="text-[#8b949e] hover:text-[#e6edf3] text-xs"
-              >
-                ✕
-              </button>
+              <button onClick={() => setSelectedCountry(null)} className="text-[#8b949e] hover:text-[#e6edf3] text-xs">✕</button>
             </div>
             <div className="text-xs text-[#8b949e] mb-2">{selectedYear}</div>
             <div className="space-y-1 text-xs">
@@ -253,9 +220,7 @@ export function WorldMap() {
               </div>
               <div className="flex justify-between">
                 <span className="text-[#8b949e]">Animals counted</span>
-                <span className="text-[#e6edf3] font-mono">
-                  {(selectedEntry.totalAnimals / 1e6).toFixed(0)}M
-                </span>
+                <span className="text-[#e6edf3] font-mono">{(selectedEntry.totalAnimals / 1e6).toFixed(0)}M</span>
               </div>
               {Object.entries(selectedEntry.bySpecies)
                 .sort(([, a], [, b]) => b - a)
@@ -277,7 +242,9 @@ export function WorldMap() {
           style={{ left: tooltip.x + 14, top: tooltip.y - 8 }}
         >
           <div className="font-semibold text-[#e6edf3]">{tooltip.entry.entity}</div>
-          <div className="text-[#8b949e] mt-0.5">Est. SADs: <span className="font-mono text-[#e6edf3]">{formatSads(tooltip.entry.totalSads)}</span></div>
+          <div className="text-[#8b949e] mt-0.5">
+            Est. SADs: <span className="font-mono text-[#e6edf3]">{formatSads(tooltip.entry.totalSads)}</span>
+          </div>
         </div>
       )}
     </div>

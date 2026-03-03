@@ -50,16 +50,46 @@ export const SAD_SCENARIOS: SadScenario[] = [
   { animal: 'Sheep', scenario: 'Farmed sheep', avgSadsPerFarmingYear: null, animalsSlaughteredPerYear: 300_000_000, totalSadBurden: 7.55e8, painLevel: 'moderate', isSubScenario: false },
 ];
 
-// Animal groups for filtering
-export const ANIMAL_GROUPS = {
-  'Land Animals': ['Layers', 'Male chicks', 'Broilers', 'Pigs', 'Beef cows', 'Dairy cows', 'Sheep'],
+// Chickens are split into sub-types in the data but grouped under "Chickens" in the UI
+export const CHICKEN_SUBTYPES = ['Layers', 'Broilers', 'Male chicks'] as const;
+
+/** Map chicken sub-types to the parent display group 'Chickens'; all other animals pass through unchanged */
+export function getDisplayAnimal(animal: string): string {
+  return (CHICKEN_SUBTYPES as readonly string[]).includes(animal) ? 'Chickens' : animal;
+}
+
+// Animal groups for filtering.
+// Top-level strings are direct animal names; objects represent a collapsible parent group.
+export type AnimalGroupEntry = string | { parent: string; children: string[] };
+
+export const ANIMAL_GROUPS: Record<string, AnimalGroupEntry[]> = {
+  'Land Animals': [
+    { parent: 'Chickens', children: ['Layers', 'Broilers', 'Male chicks'] },
+    'Pigs',
+    'Beef cows',
+    'Dairy cows',
+    'Sheep',
+  ],
   'Fish': ['Salmon', 'Sea bream', 'Sea bass', 'Rainbow trout', 'Tilapia', 'Pangasius', 'Catfish', 'Barramundi', 'Fish'],
   'Crustaceans': ['Shrimp', 'Crab'],
   'Invertebrates': ['Silkworm'],
 };
 
+/** Flatten all concrete animal names out of ANIMAL_GROUPS */
+export function allAnimalNames(): string[] {
+  const names: string[] = [];
+  for (const entries of Object.values(ANIMAL_GROUPS)) {
+    for (const e of entries) {
+      if (typeof e === 'string') names.push(e);
+      else names.push(...e.children);
+    }
+  }
+  return names;
+}
+
 // Species colour palette — muted, desaturated, dark-theme appropriate
 export const SPECIES_COLOURS: Record<string, string> = {
+  'Chickens':     '#7c9e8f', // dusty teal (parent group)
   'Layers':       '#7c9e8f', // dusty teal
   'Male chicks':  '#8fad9b', // lighter teal
   'Broilers':     '#6b8f7e', // muted teal-green

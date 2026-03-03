@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { useFilteredScenarios } from '../hooks/useFilteredData';
-import { PAIN_COLOURS, SPECIES_COLOURS } from '../data/sads-scenarios';
+import { PAIN_COLOURS, SPECIES_COLOURS, getDisplayAnimal } from '../data/sads-scenarios';
 import { useDashboardStore } from '../store/dashboardStore';
 import { formatSads, formatAnimals } from './Tooltip';
 
@@ -59,7 +59,7 @@ export function BarChart() {
           const value = getValue(s);
           const pct = maxValue > 0 ? (value / maxValue) * 100 : 0;
           const isHovered = hovered === s.scenario;
-          const colour = SPECIES_COLOURS[s.animal] ?? '#4a5568';
+          const colour = SPECIES_COLOURS[getDisplayAnimal(s.animal)] ?? SPECIES_COLOURS[s.animal] ?? '#4a5568';
 
           return (
             <div
@@ -88,7 +88,7 @@ export function BarChart() {
                 {/* Label */}
                 <div className="flex-shrink-0 w-52">
                   <div className="text-xs text-[#e6edf3] truncate">{s.scenario}</div>
-                  <div className="text-xs text-[#8b949e] truncate">{s.animal}</div>
+                  <div className="text-xs text-[#8b949e] truncate">{getDisplayAnimal(s.animal)}</div>
                 </div>
 
                 {/* Bar */}

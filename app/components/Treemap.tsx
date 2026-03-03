@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 import { useFilteredScenarios, useAggregatedBySpecies } from '../hooks/useFilteredData';
-import { SPECIES_COLOURS, PAIN_COLOURS, SadScenario } from '../data/sads-scenarios';
+import { SPECIES_COLOURS, PAIN_COLOURS, SadScenario, CHICKEN_SUBTYPES, getDisplayAnimal } from '../data/sads-scenarios';
 import { useDashboardStore } from '../store/dashboardStore';
 import { formatSads, formatAnimals } from './Tooltip';
 
@@ -64,8 +64,11 @@ export function Treemap() {
     let hierarchyData: TreemapNode;
 
     if (treemapDrillAnimal) {
-      // Drill-down: show all scenarios for this animal
-      const drillScenarios = scenarios.filter(s => s.animal === treemapDrillAnimal);
+      // Drill-down: show all scenarios for this animal (handle merged 'Chickens' group)
+      const isChickens = treemapDrillAnimal === 'Chickens';
+      const drillScenarios = isChickens
+        ? scenarios.filter(s => (CHICKEN_SUBTYPES as readonly string[]).includes(s.animal))
+        : scenarios.filter(s => s.animal === treemapDrillAnimal);
       hierarchyData = {
         name: treemapDrillAnimal,
         value: 0,
@@ -73,6 +76,7 @@ export function Treemap() {
           name: s.scenario,
           value: getValue(s),
           scenario: s,
+          animal: 'Chickens', // keep colour consistent
         })),
       };
     } else if (aggregation === 'species') {
@@ -91,25 +95,27 @@ export function Treemap() {
         })),
       };
     } else {
-      // All scenarios grouped by species
+      // All scenarios grouped by species (merge chicken sub-types under 'Chickens')
       const byAnimal = new Map<string, SadScenario[]>();
       for (const s of scenarios) {
-        const list = byAnimal.get(s.animal) ?? [];
+        const displayAnimal = getDisplayAnimal(s.animal);
+        const list = byAnimal.get(displayAnimal) ?? [];
         list.push(s);
-        byAnimal.set(s.animal, list);
+        byAnimal.set(displayAnimal, list);
       }
       hierarchyData = {
         name: 'SADs',
         value: 0,
-        children: Array.from(byAnimal.entries()).map(([animal, scs]) => ({
-          name: animal,
+        children: Array.from(byAnimal.entries()).map(([displayAnimal, scs]) => ({
+          name: displayAnimal,
           value: 0,
           isGroup: true,
+          animal: displayAnimal,
           children: scs.map(s => ({
             name: s.scenario,
             value: getValue(s),
             scenario: s,
-            animal,
+            animal: displayAnimal, // use display animal for colour consistency
           })),
         })),
       };
@@ -139,8 +145,9 @@ export function Treemap() {
       .attr('height', d => Math.max(0, d.y1 - d.y0))
       .attr('rx', 3)
       .attr('fill', d => {
-        const animal = d.data.animal ?? d.data.scenario?.animal ?? d.data.name;
-        return SPECIES_COLOURS[animal] ?? '#4a5568';
+        const raw = d.data.animal ?? d.data.scenario?.animal ?? d.data.name;
+        const animal = getDisplayAnimal(raw);
+        return SPECIES_COLOURS[animal] ?? SPECIES_COLOURS[raw] ?? '#4a5568';
       })
       .attr('fill-opacity', d => {
         const pain = d.data.scenario?.painLevel;
