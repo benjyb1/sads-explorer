@@ -102,8 +102,6 @@ export function Sidebar() {
   const selectedContinentCount = (cont: string) =>
     (continentCountries[cont] ?? []).filter(c => selectedCountries.has(c.code)).length;
 
-  const showCountries = activeView === 'map' || activeView === 'timeline';
-
   return (
     <aside
       className="fixed top-0 left-0 h-full w-[280px] flex flex-col border-r border-[#30363d] bg-[#0d1117] z-30 overflow-y-auto"
@@ -197,11 +195,10 @@ export function Sidebar() {
         </div>
       </SidebarSection>
 
-      {/* 3. COUNTRIES (map / timeline) */}
-      {showCountries && (
-        <SidebarSection title="Countries">
-          <div className="space-y-2">
-            {selectedCountries.size > 0 && (
+      {/* 3. COUNTRIES */}
+      <SidebarSection title="Countries">
+        <div className="space-y-2">
+          {selectedCountries.size > 0 && (
               <div className="flex flex-wrap gap-1 mb-1">
                 {Array.from(selectedCountries).map(code => {
                   const label = countries.find(c => c.code === code)?.entity ?? code;
@@ -270,8 +267,7 @@ export function Sidebar() {
               })}
             </div>
           </div>
-        </SidebarSection>
-      )}
+      </SidebarSection>
 
       {/* 4. OPTIONS */}
       <SidebarSection title="Options">
