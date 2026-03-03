@@ -1,9 +1,8 @@
 'use client';
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { formatSads } from './Tooltip';
 import { useDashboardStore } from '../store/dashboardStore';
-import { CONTINENT_ORDER } from '../data/continents';
-import { COUNTRY_POP_M, CONTINENT_POP_M, WORLD_POP_M } from '../data/populations';
+import { COUNTRY_POP_M, WORLD_POP_M } from '../data/populations';
 
 // ── Per-person per-year animal consumption (global avg) + SADs/animal ────────
 const DIET_SPECIES = [
@@ -46,26 +45,16 @@ function formatPop(n: number): string {
 // ── Component ─────────────────────────────────────────────────────────────────
 export function WhatIfCalculator() {
   const { selectedCountries } = useDashboardStore();
-  const [geo, setGeo] = useState<string>('world');
   const [coveragePct, setCoveragePct] = useState(100);
   const [diet, setDiet] = useState<DietKey>('vegan');
 
-  // If the user clears their country selection while "selected" is active, fall back to world
-  useEffect(() => {
-    if (geo === 'selected' && selectedCountries.size === 0) setGeo('world');
-  }, [geo, selectedCountries.size]);
-
-  // Population for the chosen geography (raw people)
+  // Population: use selected countries if any, else world
   const basePop = useMemo((): number => {
-    if (geo === 'world') return WORLD_POP_M * 1e6;
-    if (geo === 'selected') {
-      let total = 0;
-      for (const code of selectedCountries) total += (COUNTRY_POP_M[code] ?? 2) * 1e6;
-      return total || 1e6;
-    }
-    if (geo in CONTINENT_POP_M) return CONTINENT_POP_M[geo] * 1e6;
-    return (COUNTRY_POP_M[geo] ?? 2) * 1e6;
-  }, [geo, selectedCountries]);
+    if (selectedCountries.size === 0) return WORLD_POP_M * 1e6;
+    let total = 0;
+    for (const code of selectedCountries) total += (COUNTRY_POP_M[code] ?? 2) * 1e6;
+    return total || 1e6;
+  }, [selectedCountries]);
 
   const people = basePop * (coveragePct / 100);
   const elim = DIET_ELIMINATIONS[diet];
@@ -81,37 +70,28 @@ export function WhatIfCalculator() {
   const total = results.reduce((a, r) => a + r.sadsAverted, 0);
   const maxContrib = Math.max(...results.map(r => r.sadsAverted), 1);
 
-  // Geography label for the result line
-  const geoLabel =
-    geo === 'world'    ? 'worldwide' :
-    geo === 'selected' ? `in ${selectedCountries.size} selected countr${selectedCountries.size === 1 ? 'y' : 'ies'}` :
-    `in ${geo}`;
+  const geoLabel = selectedCountries.size === 0
+    ? 'worldwide'
+    : `in ${selectedCountries.size} selected countr${selectedCountries.size === 1 ? 'y' : 'ies'}`;
+
+  const geoTag = selectedCountries.size === 0
+    ? '🌍 World'
+    : `⭐ ${selectedCountries.size} countr${selectedCountries.size === 1 ? 'y' : 'ies'}`;
 
   return (
-    <div className="p-4 space-y-4 text-sm">
+    <div className="space-y-3 text-sm">
 
-      {/* ── If ──────────────────────────────────────── */}
-      <div className="space-y-2">
-        <div className="flex items-center gap-2">
-          <span className="text-[10px] uppercase tracking-wider text-[#6e7681] w-16 flex-shrink-0">If</span>
-          <select
-            value={geo}
-            onChange={e => setGeo(e.target.value)}
-            className="flex-1 bg-[#21262d] border border-[#30363d] rounded px-2 py-1.5 text-xs text-[#e6edf3] focus:outline-none focus:border-[#6e7681] cursor-pointer"
-          >
-            <option value="world">🌍 World</option>
-            {CONTINENT_ORDER.map(c => (
-              <option key={c} value={c}>{c} (~{formatPop(CONTINENT_POP_M[c] * 1e6)})</option>
-            ))}
-            {selectedCountries.size > 0 && (
-              <option value="selected">⭐ Selected countries ({selectedCountries.size})</option>
-            )}
-          </select>
+      {/* ── Geography + coverage ───────────────────────────── */}
+      <div className="space-y-1.5">
+        <div className="flex items-center justify-between">
+          <span className="text-[10px] uppercase tracking-wider text-[#6e7681]">Geography</span>
+          <span className="text-xs text-[#8b949e] bg-[#161b22] px-2 py-0.5 rounded">{geoTag}</span>
         </div>
-
-        {/* Coverage slider */}
-        <div className="flex items-center gap-2">
-          <span className="text-[10px] uppercase tracking-wider text-[#6e7681] w-16 flex-shrink-0">Of people</span>
+        <div className="text-[10px] text-[#6e7681] italic">
+          {selectedCountries.size === 0 ? 'Select countries above to narrow scope' : 'Using your country selection'}
+        </div>
+        <div className="flex items-center gap-2 mt-1">
+          <span className="text-[10px] uppercase tracking-wider text-[#6e7681] w-14 flex-shrink-0">% adopting</span>
           <input
             type="range"
             min={1} max={100} step={1}
@@ -122,10 +102,10 @@ export function WhatIfCalculator() {
           />
           <span className="text-xs font-mono text-[#e6edf3] w-8 text-right">{coveragePct}%</span>
         </div>
-        <div className="text-right text-xs text-[#6e7681]">= {formatPop(people)} people</div>
+        <div className="text-right text-[11px] text-[#6e7681]">= {formatPop(people)} people</div>
       </div>
 
-      {/* ── Went ──────────────────────────────────────── */}
+      {/* ── Diet ──────────────────────────────────────────── */}
       <div>
         <div className="text-[10px] uppercase tracking-wider text-[#6e7681] mb-1.5">Went…</div>
         <div className="grid grid-cols-2 gap-1">
@@ -146,7 +126,7 @@ export function WhatIfCalculator() {
         </div>
       </div>
 
-      {/* ── Result ──────────────────────────────────────── */}
+      {/* ── Result ──────────────────────────────────────────── */}
       <div className="rounded-lg bg-[#0d1117] border border-[#21262d] p-3">
         <div className="text-[10px] uppercase tracking-wider text-[#6e7681] mb-1">Est. SADs averted / year</div>
         <div className="text-2xl font-mono font-bold text-[#7c9e8f]">{formatSads(total)}</div>

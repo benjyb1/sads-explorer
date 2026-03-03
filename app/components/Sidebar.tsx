@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { useDashboardStore, ViewType } from '../store/dashboardStore';
-import { ANIMAL_GROUPS, AnimalGroupEntry } from '../data/sads-scenarios';
+import { ANIMAL_GROUPS, AnimalGroupEntry, getDisplayAnimal } from '../data/sads-scenarios';
 import { WhatIfCalculator } from './WhatIfCalculator';
 import { useCountryData } from '../hooks/useCountryData';
 import { CONTINENT_COUNTRIES, CONTINENT_ORDER } from '../data/continents';
@@ -15,26 +15,36 @@ const VIEWS: { id: ViewType; label: string; icon: string }[] = [
   { id: 'table', label: 'Data Table', icon: '☰' },
 ];
 
+// ── Kingdom (= continent analogue for animals) ─────────────────────────────
+const KINGDOM_ORDER = Object.keys(ANIMAL_GROUPS);
+
+/** Flatten a kingdom's entries into display atoms: { display, names[] } */
+function getKingdomAtoms(kingdom: string): { display: string; names: string[] }[] {
+  return (ANIMAL_GROUPS[kingdom] ?? []).map((e: AnimalGroupEntry) => {
+    if (typeof e === 'string') return { display: e, names: [e] };
+    return { display: e.parent, names: e.children };
+  });
+}
+
+// ── Component ──────────────────────────────────────────────────────────────
 export function Sidebar() {
   const {
     activeView, setActiveView,
-    selectedAnimals, toggleAnimal, setSelectedAnimals,
-    includeSubScenarios, setIncludeSubScenarios,
-    aggregation, setAggregation,
-    normalisation, setNormalisation,
-    whatIfOpen, setWhatIfOpen,
+    selectedAnimals, setSelectedAnimals,
     selectedCountries, toggleCountry, setSelectedCountries,
   } = useDashboardStore();
 
   const { countries } = useCountryData();
-  const [expandedParents, setExpandedParents] = useState<Set<string>>(new Set());
+
+  // ── Expand / collapse state ────────────────────────────────────────────
+  const [expandedKingdoms, setExpandedKingdoms] = useState<Set<string>>(new Set(['Land Animals']));
   const [expandedContinents, setExpandedContinents] = useState<Set<string>>(new Set(['Asia']));
   const [countrySearch, setCountrySearch] = useState('');
 
-  const toggleExpandParent = (parent: string) =>
-    setExpandedParents(prev => {
+  const toggleExpandKingdom = (k: string) =>
+    setExpandedKingdoms(prev => {
       const next = new Set(prev);
-      if (next.has(parent)) next.delete(parent); else next.add(parent);
+      if (next.has(k)) next.delete(k); else next.add(k);
       return next;
     });
 
@@ -45,47 +55,35 @@ export function Sidebar() {
       return next;
     });
 
-  // Select / deselect all countries in a continent (uses the already-filtered dataset list)
+  // ── Animal helpers ──────────────────────────────────────────────────────
+  const toggleAtom = (atomNames: string[]) => {
+    const allSelected = atomNames.every(n => selectedAnimals.has(n));
+    const next = new Set(selectedAnimals);
+    if (allSelected) atomNames.forEach(n => next.delete(n));
+    else atomNames.forEach(n => next.add(n));
+    setSelectedAnimals(next);
+  };
+
+  const toggleKingdomAnimals = (kingdom: string) => {
+    const allNames = getKingdomAtoms(kingdom).flatMap(a => a.names);
+    const allSelected = allNames.every(n => selectedAnimals.has(n));
+    const next = new Set(selectedAnimals);
+    if (allSelected) allNames.forEach(n => next.delete(n));
+    else allNames.forEach(n => next.add(n));
+    setSelectedAnimals(next);
+  };
+
+  /** Count of display atoms in this kingdom that are fully selected */
+  const selectedAtomCountInKingdom = (kingdom: string) =>
+    getKingdomAtoms(kingdom).filter(a => a.names.every(n => selectedAnimals.has(n))).length;
+
+  // ── Country helpers ─────────────────────────────────────────────────────
   const toggleContinent = (cont: string, cList: { code: string }[]) => {
     const allSelected = cList.every(c => selectedCountries.has(c.code));
     const next = new Set(selectedCountries);
-    if (allSelected) {
-      cList.forEach(c => next.delete(c.code));
-    } else {
-      cList.forEach(c => next.add(c.code));
-    }
+    if (allSelected) cList.forEach(c => next.delete(c.code));
+    else cList.forEach(c => next.add(c.code));
     setSelectedCountries(next);
-  };
-
-  const parentState = (children: string[]): 'all' | 'some' | 'none' => {
-    if (selectedAnimals.size === 0) return 'all';
-    const selected = children.filter(c => selectedAnimals.has(c));
-    if (selected.length === children.length) return 'all';
-    if (selected.length === 0) return 'none';
-    return 'some';
-  };
-
-  const toggleParentGroup = (children: string[]) => {
-    const state = parentState(children);
-    const next = new Set(selectedAnimals);
-    if (state === 'all') {
-      if (selectedAnimals.size === 0) {
-        const allNames: string[] = [];
-        for (const entries of Object.values(ANIMAL_GROUPS)) {
-          for (const e of entries) {
-            if (typeof e === 'string') allNames.push(e);
-            else allNames.push(...(e as { parent: string; children: string[] }).children);
-          }
-        }
-        allNames.forEach(n => next.add(n));
-        children.forEach(c => next.delete(c));
-      } else {
-        children.forEach(c => next.delete(c));
-      }
-    } else {
-      children.forEach(c => next.add(c));
-    }
-    setSelectedAnimals(next);
   };
 
   const countryCodeSet = new Set(countries.map(c => c.code));
@@ -147,71 +145,128 @@ export function Sidebar() {
 
       {/* 2. ANIMALS */}
       <SidebarSection title="Animals">
-        <div className="space-y-3">
-          {Object.entries(ANIMAL_GROUPS).map(([group, entries]) => (
-            <div key={group}>
-              <div className="text-[10px] font-semibold text-[#6e7681] uppercase tracking-wider mb-1.5">{group}</div>
-              <div className="flex flex-wrap gap-1">
-                {(entries as AnimalGroupEntry[]).map((entry) => {
-                  if (typeof entry === 'string') {
-                    const active = selectedAnimals.size === 0 || selectedAnimals.has(entry);
-                    return (
-                      <AnimalChip key={entry} label={entry} active={active} onClick={() => toggleAnimal(entry)} />
-                    );
+        <div className="space-y-2">
+
+          {/* Smart pills — collapsed kingdom / parent-group / individual */}
+          {selectedAnimals.size > 0 && (() => {
+            const pills: { key: string; label: string; names: string[] }[] = [];
+            const handled = new Set<string>();
+
+            // Step 1: fully-selected kingdoms → one pill
+            for (const kingdom of KINGDOM_ORDER) {
+              const atoms = getKingdomAtoms(kingdom);
+              const allNames = atoms.flatMap(a => a.names);
+              if (allNames.length >= 2 && allNames.every(n => selectedAnimals.has(n))) {
+                pills.push({ key: `k-${kingdom}`, label: `${kingdom} (${atoms.length})`, names: allNames });
+                allNames.forEach(n => handled.add(n));
+              }
+            }
+
+            // Step 2: fully-selected parent groups (Chickens etc.) not already handled
+            for (const entries of Object.values(ANIMAL_GROUPS)) {
+              for (const e of entries) {
+                if (typeof e !== 'string') {
+                  const { parent, children } = e;
+                  if (!children.some(n => handled.has(n)) && children.every(n => selectedAnimals.has(n))) {
+                    pills.push({ key: `p-${parent}`, label: parent, names: children });
+                    children.forEach(n => handled.add(n));
                   }
-                  const { parent, children } = entry as { parent: string; children: string[] };
-                  const state = parentState(children);
-                  const expanded = expandedParents.has(parent);
-                  return (
-                    <div key={parent} className="w-full">
-                      <div className="flex items-center gap-1">
-                        <button
-                          onClick={() => toggleParentGroup(children)}
-                          className={`flex-1 flex items-center px-2 py-0.5 rounded text-xs transition-colors border text-left ${
-                            state === 'none'
-                              ? 'border-transparent text-[#3d444d]'
-                              : 'border-[#30363d] text-[#e6edf3] bg-[#161b22]'
-                          }`}
-                        >
-                          {state === 'some' && <span className="w-1 h-1 rounded-full bg-[#7c9e8f] mr-1.5 flex-shrink-0" />}
-                          {parent}
-                        </button>
-                        <button
-                          onClick={() => toggleExpandParent(parent)}
-                          className="px-1.5 py-0.5 text-[#6e7681] hover:text-[#8b949e] text-xs"
-                        >
-                          {expanded ? '▴' : '▾'}
-                        </button>
-                      </div>
-                      {expanded && (
-                        <div className="ml-3 mt-1 flex flex-wrap gap-1 border-l border-[#21262d] pl-2">
-                          {children.map(child => {
-                            const active = selectedAnimals.size === 0 || selectedAnimals.has(child);
-                            return (
-                              <AnimalChip key={child} label={child} active={active} onClick={() => toggleAnimal(child)} small />
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                }
+              }
+            }
+
+            // Step 3: remaining individual animals
+            for (const name of selectedAnimals) {
+              if (!handled.has(name)) {
+                pills.push({ key: name, label: getDisplayAnimal(name), names: [name] });
+              }
+            }
+
+            const MAX = 7;
+            const visible = pills.slice(0, MAX);
+            const overflow = pills.length - MAX;
+            return (
+              <div className="flex flex-wrap gap-1 mb-1">
+                {visible.map(pill => (
+                  <span key={pill.key} className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-[#21262d] text-xs text-[#8b949e]">
+                    {pill.label}
+                    <button
+                      onClick={() => { const n = new Set(selectedAnimals); pill.names.forEach(x => n.delete(x)); setSelectedAnimals(n); }}
+                      className="hover:text-[#e6edf3] ml-0.5"
+                    >✕</button>
+                  </span>
+                ))}
+                {overflow > 0 && (
+                  <span className="px-1.5 py-0.5 text-xs text-[#6e7681]">+{overflow} more</span>
+                )}
+                <button onClick={() => setSelectedAnimals(new Set())} className="text-xs text-[#6e7681] hover:text-[#e6edf3] self-center">
+                  Clear all
+                </button>
               </div>
-            </div>
-          ))}
-          {selectedAnimals.size > 0 && (
-            <button onClick={() => setSelectedAnimals(new Set())} className="text-xs text-[#8b949e] hover:text-[#e6edf3]">
-              Clear filter
-            </button>
-          )}
+            );
+          })()}
+
+          {/* Kingdom accordions */}
+          <div className="space-y-0.5">
+            {KINGDOM_ORDER.map(kingdom => {
+              const atoms = getKingdomAtoms(kingdom);
+              const selCount = selectedAtomCountInKingdom(kingdom);
+              const expanded = expandedKingdoms.has(kingdom);
+              return (
+                <div key={kingdom} className="rounded border border-[#21262d] overflow-hidden">
+                  <div className="flex items-center">
+                    {/* Kingdom name — click to select/deselect all */}
+                    <button
+                      onClick={() => toggleKingdomAnimals(kingdom)}
+                      className="flex-1 flex items-center gap-2 px-2.5 py-1.5 text-xs hover:bg-[#161b22] transition-colors text-left"
+                      title={`Select / deselect all ${kingdom}`}
+                    >
+                      <span className={selCount > 0 ? 'text-[#e6edf3] font-medium' : 'text-[#8b949e]'}>{kingdom}</span>
+                      {selCount > 0 && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#7c9e8f] text-[#0d1117] font-semibold leading-none">{selCount}</span>
+                      )}
+                    </button>
+                    {/* Arrow — expand/collapse */}
+                    <button
+                      onClick={() => toggleExpandKingdom(kingdom)}
+                      className="px-2.5 py-1.5 text-[#6e7681] hover:text-[#8b949e] text-xs transition-colors"
+                      title={expanded ? 'Collapse' : 'Expand'}
+                    >
+                      {expanded ? '▴' : '▾'}
+                    </button>
+                  </div>
+                  {expanded && (
+                    <div className="border-t border-[#21262d]">
+                      {atoms.map(atom => {
+                        const isActive = atom.names.every(n => selectedAnimals.has(n));
+                        return (
+                          <button
+                            key={atom.display}
+                            onClick={() => toggleAtom(atom.names)}
+                            className={`w-full flex items-center justify-between px-3 py-1 text-xs transition-colors hover:bg-[#161b22] ${
+                              isActive ? 'text-[#e6edf3]' : 'text-[#8b949e]'
+                            }`}
+                          >
+                            <span>{atom.display}</span>
+                            {isActive && <span className="text-[#7c9e8f]">✓</span>}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </SidebarSection>
 
       {/* 3. COUNTRIES */}
       <SidebarSection title="Countries">
         <div className="space-y-2">
+
+          {/* Smart pills — collapsed continent / individual */}
           {selectedCountries.size > 0 && (() => {
-            // Build smart pills: collapse wholly-selected continents into one pill
             const pills: { key: string; label: string; codes: string[] }[] = [];
             const handled = new Set<string>();
             for (const cont of CONTINENT_ORDER) {
@@ -254,119 +309,73 @@ export function Sidebar() {
             );
           })()}
 
-            <input
-              type="text"
-              placeholder="Search countries…"
-              value={countrySearch}
-              onChange={e => setCountrySearch(e.target.value)}
-              className="w-full bg-[#21262d] border border-[#30363d] rounded px-2.5 py-1 text-xs text-[#e6edf3] placeholder-[#6e7681] focus:outline-none focus:border-[#6e7681]"
-            />
+          <input
+            type="text"
+            placeholder="Search countries…"
+            value={countrySearch}
+            onChange={e => setCountrySearch(e.target.value)}
+            className="w-full bg-[#21262d] border border-[#30363d] rounded px-2.5 py-1 text-xs text-[#e6edf3] placeholder-[#6e7681] focus:outline-none focus:border-[#6e7681]"
+          />
 
-            <div className="space-y-0.5">
-              {CONTINENT_ORDER.map(cont => {
-                const cList = filteredContinentCountries[cont] ?? [];
-                if (cList.length === 0 && countrySearch) return null;
-                const selCount = selectedContinentCount(cont);
-                const expanded = expandedContinents.has(cont) || !!countrySearch;
-                return (
-                  <div key={cont} className="rounded border border-[#21262d] overflow-hidden">
-                    <div className="flex items-center">
-                      {/* Continent name — click to select/deselect all countries */}
-                      <button
-                        onClick={() => toggleContinent(cont, continentCountries[cont] ?? [])}
-                        className="flex-1 flex items-center gap-2 px-2.5 py-1.5 text-xs hover:bg-[#161b22] transition-colors text-left"
-                        title={`Select / deselect all ${cont} countries`}
-                      >
-                        <span className={selCount > 0 ? 'text-[#e6edf3] font-medium' : 'text-[#8b949e]'}>{cont}</span>
-                        {selCount > 0 && (
-                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#7c9e8f] text-[#0d1117] font-semibold leading-none">{selCount}</span>
-                        )}
-                      </button>
-                      {/* Arrow — click to expand/collapse */}
-                      <button
-                        onClick={() => toggleExpandContinent(cont)}
-                        className="px-2.5 py-1.5 text-[#6e7681] hover:text-[#8b949e] text-xs transition-colors"
-                        title={expanded ? 'Collapse' : 'Expand'}
-                      >
-                        {expanded ? '▴' : '▾'}
-                      </button>
-                    </div>
-                    {expanded && (
-                      <div className="border-t border-[#21262d] max-h-44 overflow-y-auto">
-                        {cList.map(c => (
-                          <button
-                            key={c.code}
-                            onClick={() => toggleCountry(c.code)}
-                            className={`w-full flex items-center justify-between px-3 py-1 text-xs transition-colors hover:bg-[#161b22] ${
-                              selectedCountries.has(c.code) ? 'text-[#e6edf3]' : 'text-[#8b949e]'
-                            }`}
-                          >
-                            <span>{c.entity}</span>
-                            {selectedCountries.has(c.code) && <span className="text-[#7c9e8f]">✓</span>}
-                          </button>
-                        ))}
-                        {cList.length === 0 && (
-                          <div className="px-3 py-2 text-xs text-[#6e7681] italic">No matching countries</div>
-                        )}
-                      </div>
-                    )}
+          <div className="space-y-0.5">
+            {CONTINENT_ORDER.map(cont => {
+              const cList = filteredContinentCountries[cont] ?? [];
+              if (cList.length === 0 && countrySearch) return null;
+              const selCount = selectedContinentCount(cont);
+              const expanded = expandedContinents.has(cont) || !!countrySearch;
+              return (
+                <div key={cont} className="rounded border border-[#21262d] overflow-hidden">
+                  <div className="flex items-center">
+                    {/* Continent name — click to select/deselect all countries */}
+                    <button
+                      onClick={() => toggleContinent(cont, continentCountries[cont] ?? [])}
+                      className="flex-1 flex items-center gap-2 px-2.5 py-1.5 text-xs hover:bg-[#161b22] transition-colors text-left"
+                      title={`Select / deselect all ${cont} countries`}
+                    >
+                      <span className={selCount > 0 ? 'text-[#e6edf3] font-medium' : 'text-[#8b949e]'}>{cont}</span>
+                      {selCount > 0 && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#7c9e8f] text-[#0d1117] font-semibold leading-none">{selCount}</span>
+                      )}
+                    </button>
+                    {/* Arrow — expand/collapse */}
+                    <button
+                      onClick={() => toggleExpandContinent(cont)}
+                      className="px-2.5 py-1.5 text-[#6e7681] hover:text-[#8b949e] text-xs transition-colors"
+                      title={expanded ? 'Collapse' : 'Expand'}
+                    >
+                      {expanded ? '▴' : '▾'}
+                    </button>
                   </div>
-                );
-              })}
-            </div>
-          </div>
-      </SidebarSection>
-
-      {/* 4. OPTIONS */}
-      <SidebarSection title="Options">
-        <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <span className="text-xs text-[#8b949e]">Include sub-scenarios</span>
-            <button
-              role="switch"
-              aria-checked={includeSubScenarios}
-              onClick={() => setIncludeSubScenarios(!includeSubScenarios)}
-              className={`w-9 h-5 rounded-full transition-colors relative flex-shrink-0 ${includeSubScenarios ? 'bg-[#7c9e8f]' : 'bg-[#30363d]'}`}
-            >
-              <span className={`absolute top-0.5 h-4 w-4 rounded-full bg-white transition-transform ${includeSubScenarios ? 'translate-x-4' : 'translate-x-0.5'}`} />
-            </button>
-          </div>
-          <div>
-            <div className="text-xs text-[#8b949e] mb-1">Group by</div>
-            <div className="flex gap-1">
-              {(['scenarios', 'species'] as const).map(a => (
-                <button key={a} onClick={() => setAggregation(a)}
-                  className={`flex-1 py-1 rounded text-xs transition-colors ${aggregation === a ? 'bg-[#21262d] text-[#e6edf3]' : 'text-[#8b949e] hover:text-[#e6edf3]'}`}>
-                  {a === 'scenarios' ? 'All scenarios' : 'By species'}
-                </button>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="text-xs text-[#8b949e] mb-1">Normalise</div>
-            <div className="flex gap-1 flex-wrap">
-              {([['raw','Raw'],['per1000','Per 1K'],['perCapita','Per capita']] as const).map(([v,l]) => (
-                <button key={v} onClick={() => setNormalisation(v)}
-                  className={`px-2 py-1 rounded text-xs transition-colors ${normalisation === v ? 'bg-[#21262d] text-[#e6edf3]' : 'text-[#8b949e] hover:text-[#e6edf3]'}`}>
-                  {l}
-                </button>
-              ))}
-            </div>
+                  {expanded && (
+                    <div className="border-t border-[#21262d] max-h-44 overflow-y-auto">
+                      {cList.map(c => (
+                        <button
+                          key={c.code}
+                          onClick={() => toggleCountry(c.code)}
+                          className={`w-full flex items-center justify-between px-3 py-1 text-xs transition-colors hover:bg-[#161b22] ${
+                            selectedCountries.has(c.code) ? 'text-[#e6edf3]' : 'text-[#8b949e]'
+                          }`}
+                        >
+                          <span>{c.entity}</span>
+                          {selectedCountries.has(c.code) && <span className="text-[#7c9e8f]">✓</span>}
+                        </button>
+                      ))}
+                      {cList.length === 0 && (
+                        <div className="px-3 py-2 text-xs text-[#6e7681] italic">No matching countries</div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </SidebarSection>
 
-      {/* What-If */}
-      <div className="border-t border-[#21262d]">
-        <button
-          onClick={() => setWhatIfOpen(!whatIfOpen)}
-          className="w-full flex items-center justify-between px-4 py-3 text-xs font-semibold text-[#8b949e] hover:text-[#e6edf3] transition-colors"
-        >
-          <span>⟳ What-If Calculator</span>
-          <span className={`transition-transform ${whatIfOpen ? 'rotate-180' : ''}`}>▾</span>
-        </button>
-        {whatIfOpen && <WhatIfCalculator />}
-      </div>
+      {/* 4. WHAT-IF */}
+      <SidebarSection title="What-If Calculator">
+        <WhatIfCalculator />
+      </SidebarSection>
 
       {/* Footer */}
       <div className="mt-auto px-4 py-3 border-t border-[#21262d]">
@@ -385,20 +394,5 @@ function SidebarSection({ title, children }: { title: string; children: React.Re
       <div className="text-xs font-semibold text-[#6e7681] uppercase tracking-wider mb-2">{title}</div>
       {children}
     </div>
-  );
-}
-
-function AnimalChip({ label, active, onClick, small = false }: {
-  label: string; active: boolean; onClick: () => void; small?: boolean;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`px-2 py-0.5 rounded transition-colors border ${small ? 'text-[10px]' : 'text-xs'} ${
-        active ? 'border-[#30363d] text-[#e6edf3] bg-[#161b22]' : 'border-transparent text-[#3d444d]'
-      }`}
-    >
-      {label}
-    </button>
   );
 }
