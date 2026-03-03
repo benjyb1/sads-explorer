@@ -45,6 +45,18 @@ export function Sidebar() {
       return next;
     });
 
+  // Select / deselect all countries in a continent (uses the already-filtered dataset list)
+  const toggleContinent = (cont: string, cList: { code: string }[]) => {
+    const allSelected = cList.every(c => selectedCountries.has(c.code));
+    const next = new Set(selectedCountries);
+    if (allSelected) {
+      cList.forEach(c => next.delete(c.code));
+    } else {
+      cList.forEach(c => next.add(c.code));
+    }
+    setSelectedCountries(next);
+  };
+
   const parentState = (children: string[]): 'all' | 'some' | 'none' => {
     if (selectedAnimals.size === 0) return 'all';
     const selected = children.filter(c => selectedAnimals.has(c));
@@ -231,18 +243,27 @@ export function Sidebar() {
                 const expanded = expandedContinents.has(cont) || !!countrySearch;
                 return (
                   <div key={cont} className="rounded border border-[#21262d] overflow-hidden">
-                    <button
-                      onClick={() => toggleExpandContinent(cont)}
-                      className="w-full flex items-center justify-between px-2.5 py-1.5 text-xs hover:bg-[#161b22] transition-colors"
-                    >
-                      <span className={selCount > 0 ? 'text-[#e6edf3] font-medium' : 'text-[#8b949e]'}>{cont}</span>
-                      <div className="flex items-center gap-2">
+                    <div className="flex items-center">
+                      {/* Continent name — click to select/deselect all countries */}
+                      <button
+                        onClick={() => toggleContinent(cont, continentCountries[cont] ?? [])}
+                        className="flex-1 flex items-center gap-2 px-2.5 py-1.5 text-xs hover:bg-[#161b22] transition-colors text-left"
+                        title={`Select / deselect all ${cont} countries`}
+                      >
+                        <span className={selCount > 0 ? 'text-[#e6edf3] font-medium' : 'text-[#8b949e]'}>{cont}</span>
                         {selCount > 0 && (
-                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#7c9e8f] text-[#0d1117] font-semibold">{selCount}</span>
+                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#7c9e8f] text-[#0d1117] font-semibold leading-none">{selCount}</span>
                         )}
-                        <span className="text-[#6e7681]">{expanded ? '▴' : '▾'}</span>
-                      </div>
-                    </button>
+                      </button>
+                      {/* Arrow — click to expand/collapse */}
+                      <button
+                        onClick={() => toggleExpandContinent(cont)}
+                        className="px-2.5 py-1.5 text-[#6e7681] hover:text-[#8b949e] text-xs transition-colors"
+                        title={expanded ? 'Collapse' : 'Expand'}
+                      >
+                        {expanded ? '▴' : '▾'}
+                      </button>
+                    </div>
                     {expanded && (
                       <div className="border-t border-[#21262d] max-h-44 overflow-y-auto">
                         {cList.map(c => (
