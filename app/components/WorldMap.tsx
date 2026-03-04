@@ -13,6 +13,18 @@ interface GeoFeature {
   geometry: unknown;
 }
 
+// Some GeoJSON features have '-99' instead of a real ISO code; patch them by name
+const GEO_NAME_TO_ISO3: Record<string, string> = {
+  'France': 'FRA',
+  'Norway': 'NOR',
+};
+
+function getIso3(feature: GeoFeature): string {
+  const raw = feature.properties['ISO3166-1-Alpha-3'];
+  if (raw === '-99') return GEO_NAME_TO_ISO3[feature.properties.name] ?? raw;
+  return raw;
+}
+
 export function WorldMap() {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -110,7 +122,7 @@ export function WorldMap() {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .attr('d', path as any)
       .attr('fill', d => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         const entry = yearMap.get(code);
         if (!entry) return '#1a2433';
         const val = getDisplayValue(entry);
@@ -118,34 +130,34 @@ export function WorldMap() {
       })
       .attr('fill-opacity', d => {
         if (selectedCountries.size === 0) return 1;
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         return selectedCountries.has(code) ? 1 : 0.25;
       })
       .attr('stroke', d => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         if (selectedCountry === code) return '#e6edf3';
         if (selectedCountries.has(code)) return '#7c9e8f';
         return '#0d1117';
       })
       .attr('stroke-width', d => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         if (selectedCountry === code) return 1.5;
         if (selectedCountries.has(code)) return 1.2;
         return 0.4;
       })
       .style('cursor', d => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         return yearMap.has(code) ? 'pointer' : 'default';
       })
       .on('mousemove', (event, d) => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         const entry = yearMap.get(code) ?? null;
         if (entry) setTooltip({ x: event.clientX, y: event.clientY, entry });
         else setTooltip(t => ({ ...t, entry: null }));
       })
       .on('mouseleave', () => setTooltip(t => ({ ...t, entry: null })))
       .on('click', (_, d) => {
-        const code = d.properties['ISO3166-1-Alpha-3'];
+        const code = getIso3(d);
         setSelectedCountry(selectedCountry === code ? null : code);
       });
 

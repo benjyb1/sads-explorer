@@ -5,8 +5,9 @@ import { ANIMAL_GROUPS, AnimalGroupEntry, getDisplayAnimal } from '../data/sads-
 import { WhatIfCalculator } from './WhatIfCalculator';
 import { useCountryData } from '../hooks/useCountryData';
 import { CONTINENT_COUNTRIES, CONTINENT_ORDER } from '../data/continents';
+import { LITE_VIEWS } from './Dashboard';
 
-const VIEWS: { id: ViewType; label: string; icon: string }[] = [
+const ALL_VIEWS: { id: ViewType; label: string; icon: string }[] = [
   { id: 'treemap', label: 'Treemap', icon: '⊞' },
   { id: 'bar', label: 'Bar Chart', icon: '≡' },
   { id: 'bubble', label: 'Bubble', icon: '◎' },
@@ -27,7 +28,8 @@ function getKingdomAtoms(kingdom: string): { display: string; names: string[] }[
 }
 
 // ── Component ──────────────────────────────────────────────────────────────
-export function Sidebar() {
+export function Sidebar({ lite = false }: { lite?: boolean }) {
+  const VIEWS = lite ? ALL_VIEWS.filter(v => LITE_VIEWS.includes(v.id)) : ALL_VIEWS;
   const {
     activeView, setActiveView,
     selectedAnimals, setSelectedAnimals,
