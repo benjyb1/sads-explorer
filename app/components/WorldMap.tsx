@@ -85,7 +85,7 @@ export function WorldMap() {
 
     const colourScale = d3.scaleSequential()
       .domain([0, maxValue || 1])
-      .interpolator(d3.interpolateRgb('#1c2128', '#8b2222'));
+      .interpolator(t => d3.interpolateInferno(0.15 + t * 0.82));
 
     const g = svg.append('g');
 
@@ -112,9 +112,9 @@ export function WorldMap() {
       .attr('fill', d => {
         const code = d.properties['ISO3166-1-Alpha-3'];
         const entry = yearMap.get(code);
-        if (!entry) return '#21262d';
+        if (!entry) return '#1a2433';
         const val = getDisplayValue(entry);
-        return val > 0 ? colourScale(val) : '#21262d';
+        return val > 0 ? colourScale(val) : '#1a2433';
       })
       .attr('fill-opacity', d => {
         if (selectedCountries.size === 0) return 1;
@@ -203,7 +203,7 @@ export function WorldMap() {
         {/* Colour legend */}
         <div className="absolute bottom-4 left-4 flex items-center gap-2 text-xs text-[#8b949e]">
           <span>Low</span>
-          <div className="w-24 h-2 rounded" style={{ background: 'linear-gradient(to right, #1c2128, #8b2222)' }} />
+          <div className="w-24 h-2 rounded" style={{ background: 'linear-gradient(to right, #280b3a, #7c1d6f, #e55c30, #f9c932)' }} />
           <span>High</span>
           <span className="ml-3 text-[#6e7681]">Scroll to zoom · drag to pan · click country for detail</span>
         </div>
