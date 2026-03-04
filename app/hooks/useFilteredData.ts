@@ -74,7 +74,7 @@ export function useTotalStats() {
     const totalAnimals = filtered.reduce((a, s) => a + s.animalsSlaughteredPerYear, 0);
     const worst = filtered.reduce<SadScenario | null>((w, s) => {
       if (!w) return s;
-      return PAIN_SCORE[s.painLevel] > PAIN_SCORE[w.painLevel] ? s : w;
+      return s.totalSadBurden > w.totalSadBurden ? s : w;
     }, null);
 
     return { totalBurden, totalAnimals, worstScenario: worst, scenarioCount: filtered.length };

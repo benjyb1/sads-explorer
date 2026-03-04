@@ -18,7 +18,7 @@ const METRICS: { value: MetricType; label: string }[] = [
 
 export function StatsBar() {
   const { totalBurden, totalAnimals, worstScenario, scenarioCount } = useTotalStats();
-  const { metric, setMetric, selectedPainLevels, togglePainLevel } = useDashboardStore();
+  const { metric, setMetric, selectedPainLevels, togglePainLevel, activeView } = useDashboardStore();
 
   return (
     <div className="flex items-center gap-0 px-4 border-b border-[#30363d] bg-[#0d1117] text-sm flex-shrink-0" style={{ minHeight: 48 }}>
@@ -44,23 +44,25 @@ export function StatsBar() {
         )}
       </div>
 
-      {/* ── Metric selector ────────────────────────── */}
-      <div className="flex items-center gap-1 px-4 border-r border-[#30363d] py-2">
-        <span className="text-[10px] uppercase tracking-wider text-[#6e7681] mr-1.5">Metric</span>
-        {METRICS.map(m => (
-          <button
-            key={m.value}
-            onClick={() => setMetric(m.value)}
-            className={`px-2.5 py-1 rounded text-xs transition-colors ${
-              metric === m.value
-                ? 'bg-[#21262d] text-[#e6edf3]'
-                : 'text-[#6e7681] hover:text-[#8b949e] hover:bg-[#161b22]'
-            }`}
-          >
-            {m.label}
-          </button>
-        ))}
-      </div>
+      {/* ── Metric selector (treemap only) ─────────── */}
+      {activeView === 'treemap' && (
+        <div className="flex items-center gap-1 px-4 border-r border-[#30363d] py-2">
+          <span className="text-[10px] uppercase tracking-wider text-[#6e7681] mr-1.5">Metric</span>
+          {METRICS.map(m => (
+            <button
+              key={m.value}
+              onClick={() => setMetric(m.value)}
+              className={`px-2.5 py-1 rounded text-xs transition-colors ${
+                metric === m.value
+                  ? 'bg-[#21262d] text-[#e6edf3]'
+                  : 'text-[#6e7681] hover:text-[#8b949e] hover:bg-[#161b22]'
+              }`}
+            >
+              {m.label}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* ── Pain level filter ──────────────────────── */}
       <div className="flex items-center gap-1.5 px-4 py-2">

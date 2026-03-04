@@ -20,7 +20,7 @@ export function WorldMap() {
   const [countries110, setCountries110] = useState<{ features: GeoFeature[] } | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; entry: CountrySadsEntry | null }>({ x: 0, y: 0, entry: null });
   const { countryData, loading } = useCountryData();
-  const { selectedYear, setSelectedYear, normalisation, setSelectedCountry, selectedCountry, selectedCountries } = useDashboardStore();
+  const { selectedYear, setSelectedYear, normalisation, setNormalisation, setSelectedCountry, selectedCountry, selectedCountries } = useDashboardStore();
 
   // Load local GeoJSON (served from /public/world.geojson)
   useEffect(() => {
@@ -177,9 +177,19 @@ export function WorldMap() {
           style={{ accentColor: '#7c9e8f' }}
         />
         <span className="font-mono text-sm text-[#e6edf3] w-12 text-right">{selectedYear}</span>
-        <span className="text-xs text-[#8b949e] ml-2">
-          {normalisation === 'perCapita' ? 'SADs per capita' : 'Total SADs'} · {yearMap.size} countries with data
-        </span>
+        <div className="flex gap-1 ml-2">
+          {([['raw', 'Total SADs'], ['perCapita', 'Per capita']] as const).map(([v, l]) => (
+            <button key={v} onClick={() => setNormalisation(v)}
+              className={`px-2 py-0.5 rounded text-xs transition-colors border ${
+                normalisation === v
+                  ? 'bg-[#21262d] border-[#30363d] text-[#e6edf3]'
+                  : 'border-transparent text-[#6e7681] hover:text-[#8b949e]'
+              }`}>
+              {l}
+            </button>
+          ))}
+        </div>
+        <span className="text-xs text-[#8b949e]">{yearMap.size} countries with data</span>
       </div>
 
       <div className="flex-1 relative overflow-hidden">
