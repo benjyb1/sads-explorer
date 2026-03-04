@@ -87,28 +87,33 @@ export function allAnimalNames(): string[] {
   return names;
 }
 
-// Species colour palette — muted, desaturated, dark-theme appropriate
+// Species colour palette — distinct kingdoms, richer saturation, dark-theme
 export const SPECIES_COLOURS: Record<string, string> = {
-  'Chickens':       '#7c9e8f', // dusty teal (parent group)
-  'Layers':         '#7c9e8f', // dusty teal
-  'Male Chicks':    '#8fad9b', // lighter teal
-  'Broilers':       '#6b8f7e', // muted teal-green
-  'Pigs':           '#c4956a', // warm amber-terracotta
-  'Beef Cows':      '#b07d5a', // terracotta
-  'Dairy Cows':     '#c9a87c', // warm sand
-  'Sheep':          '#9aad8f', // sage green
-  'Salmon':         '#7a8fb5', // slate blue
-  'Sea Bream':      '#6b7fa0', // muted blue
-  'Sea Bass':       '#7d8fb5', // blue-grey
-  'Rainbow Trout':  '#8a9ec4', // lighter blue
-  'Tilapia':        '#606e8a', // dark slate
-  'Pangasius':      '#6e7d99', // blue-grey
-  'Catfish':        '#5f6d87', // deep slate
-  'Barramundi':     '#7a8aaa', // slate
-  'Fish':           '#697a97', // generic fish blue
-  'Shrimp':         '#b5856e', // dusty rose-terracotta
-  'Crab':           '#a8714a', // rusty orange
-  'Silkworm':       '#9e9e76', // olive/khaki
+  // Chickens — teal family
+  'Chickens':       '#58b09a', // signature teal
+  'Layers':         '#58b09a',
+  'Male Chicks':    '#78c8b0', // lighter teal
+  'Broilers':       '#44967f', // deeper teal
+  // Other land animals — warm coral/amber family
+  'Pigs':           '#e07858', // vivid coral-orange
+  'Beef Cows':      '#c85040', // rich brick
+  'Dairy Cows':     '#dfa84e', // golden amber
+  'Sheep':          '#94c45a', // fresh lime-green
+  // Fish — cornflower blue family
+  'Salmon':         '#5898d8', // cornflower blue
+  'Sea Bream':      '#4880c4',
+  'Sea Bass':       '#6aaede',
+  'Rainbow Trout':  '#82c4ec',
+  'Tilapia':        '#3870b4',
+  'Pangasius':      '#5090cc',
+  'Catfish':        '#3060a4',
+  'Barramundi':     '#5c8cc8',
+  'Fish':           '#4878bc', // generic fish blue
+  // Crustaceans — rust/coral family
+  'Shrimp':         '#e08870', // warm coral
+  'Crab':           '#c85e40', // deep rust
+  // Invertebrates
+  'Silkworm':       '#aac050', // olive-chartreuse
 };
 
 export const PAIN_COLOURS: Record<PainLevel, string> = {
